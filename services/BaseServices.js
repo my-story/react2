@@ -2,7 +2,7 @@ import axios from 'axios';
 
 //EL base env que este primero es el que requestea primero
 const http = axios.create({
-  baseURL: process.env.REACT_APP_BASE_URL_DEV || process.env.REACT_APP_BASE_URL, 
+  baseURL: process.env.REACT_APP_BASE_URL, 
   withCredentials: true
 })
 
