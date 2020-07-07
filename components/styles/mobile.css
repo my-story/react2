@@ -1,0 +1,799 @@
+@media only screen and (max-width: 765px) {
+  .review-page {
+    margin: 0 5vw 0 5vw;
+  }
+  .book-card {
+    margin-top: 2vh;
+  }
+  .book-container {
+    justify-content: center;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #000000;
+    font-family: "Hind", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  .influencer-pic {
+    position: relative;
+    left: 0;
+    height: 80px;
+    width: auto;
+    border-radius: 200px;
+    margin: 0;
+  }
+  .subheading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1vh;
+  }
+  .login-form-parent {
+    margin-right: 0;
+  }
+  .orange-login-rectangle {
+    min-width: 100vw;
+    margin: 0;
+  }
+  .orange-signup-rectangle {
+    min-width: 100vw;
+    margin: 0;
+  }
+  .about-heading {
+    height: 10vh;
+    width: 100%;
+  }
+  .about-heading span {
+    font-size: 20px;
+  }
+  .about-description {
+    height: 30vh;
+    min-width: 20vw;
+    display: flex;
+    justify-content: center;
+  }
+  .about-description {
+    /* height: 10vh; */
+    min-width: 25vw;
+    /* margin-bottom: 8vh; */
+  }
+  .description {
+    width: 80%;
+    margin: 0 1vw 0 1vw;
+  }
+  .mobile-login-page {
+    display: flex;
+    justify-content: center;
+    background-color: #3d676a;
+    height: 90vh;
+  }
+  .mobile-login-form {
+    margin-top: 5vh;
+    height: 70vh;
+    width: 80%;
+    background-color: white;
+  }
+  .p-login-header {
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+    width: 100%;
+  }
+  .p-login {
+    margin-top: 0;
+  }
+  .new-login {
+    font-size: 2.5vh;
+    font-weight: normal;
+    text-align: center;
+  }
+  .inputs-login {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    max-width: 85%;
+  }
+  .inputs-login-styling {
+    width: 370px;
+    height: 8vh;
+  }
+  .login-button {
+    margin-top: 0;
+    width: 55vw;
+  }
+  .login-button-signup {
+    margin-top: 25px;
+    width: 55vw;
+  }
+  .remember-div {
+    /* height: 11vh; */
+    margin-top: 25vh;
+    font-size: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+      font-family: "Hind";
+      height: 20px;
+      
+     
+      align-items: center;
+
+  }
+  .mail-image {
+    left: 90px;
+    bottom: 60px;
+  }
+  #sign-up-redirect-bttn {
+    text-decoration: none;
+    border: none;
+    background: none;
+  } 
+  .signup {
+    color: #f66c4f;
+  }
+  .signup:hover {
+    border-bottom: 1px #f66c4f;
+  }
+  .new-signup {
+    font-size: 3vh;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Hind";
+  }
+  .name-last-container {
+    /* border: 1px solid; */
+    margin-right: 12px;
+    min-width: 235px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .name-last-container input {
+    width: 45%;
+    height: 48px;
+  }
+
+
+  #account-log-in {
+    color: #f66c4f;
+    font-weight: bold;
+    background: none;
+    border: none;
+  }
+  .terms-page {
+    margin: 0 5vw 0 5vw;
+  }
+  .terms-first-p {
+    font-family: Arial, Helvetica, san-serif;
+    color: #3d676a;
+    width: 100%;
+    font-size: 2vh;
+    margin-right: 14vw;
+    text-align: justify;
+  }
+  .terms-inform {
+    width: 80%;
+    margin-right: 0vw;
+    font-size: 2vh;
+  }
+  .terms-content {
+    margin-top: 30px;
+    margin-left: -5px;
+    width: 11.2%;
+  }
+  #content-content {
+    font-weight: bold;
+  }
+  #content-head {
+    font-size: 105%;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    height: 35vh;
+    width: 100%;
+    background-color: #f3f2eb;
+    font-family: "Hind", sans-serif;
+  }
+  .nav-footer {
+    /* margin-left: 50px; */
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    font-family: Hind;
+    align-items: center;
+    font-size: 80%;
+  }
+  .logo-div {
+    width: 100px;
+    /* padding-left: 2vw; */
+  }
+  .logo-copywrite {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    font-size: 60%;
+  }
+  .important-info {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+  }
+  .product-all-page h1{
+    font-size: 35px;
+  }
+  .all-categories-p {
+    font-size: 10px;
+  }
+  .product-first-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+  #product-description {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #product-description-1 {
+    /* border: 1px solid; */
+    min-width: 85vw;
+  }
+  .product-model-div {
+    width: 100%;
+    height: 90vh;
+  }
+  #product-model {
+    font-size: 6vh;
+  }
+  .product-pictures {
+    height: 15vh;
+    width: 100%;
+    /* border: 1px solid  black; */
+  }
+  #product-pictures-circle {
+    height: 60vh;
+    width: 90vw;
+    border-radius: 50%;
+    background-color: #f9f8f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15vh;
+    left: 5vw;
+  }
+  #image-circle {
+    left: -26vw;
+    top: 25vh;
+    width: 15vw;
+  }
+  #image-circle2 {
+    left: -22vw;
+    top: 30vh;
+    width: 15vw;
+  }
+  #image-circle3 {
+    left: -18vw;
+    top: 25vh;
+    width: 15vw;
+  }
+  #options-pictures {
+    height: 7vh;
+    width: auto;
+  }
+  .main-image {
+    height: 150px;
+    margin-top: 50px;
+  }
+  .product-price-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .add-to-cart {
+    width: 130px;
+  }
+  .specification {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7vw;
+  }
+  .specification ul {
+    margin-left: -7vw;
+  }
+  .product-detail-page {
+    height: 180vh;
+  }
+  .product-backed-by {
+    width: 90%;
+    margin: 0 12vw;
+  }
+  #expert-quote-picture {
+    height: 8vh;
+  }
+  .index-page {
+    margin: 0 5vw 0 5vw;
+    height: 650vh;
+  }
+  .expert-card-paragraph p {
+    font-size: 80%;
+  }
+  .best-book-pictures {
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    height: 200px;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .podcast-title-div {
+    margin-top: 120px;
+    height: 40vh;
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      align-items: center;
+      align-content: center;
+
+  }
+
+.category-bar {
+  margin-top: 130px;
+}
+  #best-book-cover {
+    height: auto;
+    border-radius: 25px;
+    width: 65%;
+    /* padding-right: 60px;
+					padding-left: 30px; */
+    background-color: #f7f7f7;
+  }
+  #best-book-author {
+    height: 100px;
+    width: auto;
+    border-radius: 25px;
+    /* border-radius: 50%; */
+    position: relative;
+    top: 50px;
+    right: 20px;
+  }
+  #podcast-guest {
+    /* align-self: center; */
+    height: 200px;
+    width: auto;
+  }
+  .best-book-info-div {
+    flex-direction: column;
+  }
+  .best-book-title-div {
+    margin-top: 2vh;
+    max-width: 100%;
+  }
+  .expert-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .expert-div {
+    width: 100%;
+    /* background-image: url("https://res.cloudinary.com/dpt8pbi8n/image/upload/v1569352461/orange-bubble.svg"); */
+    background-size: 100%;
+    height: 80vh;
+  }
+  #expert-message-description {
+    width: 100%;
+  }
+  .expert-message {
+    /* height: 45vh; */
+    width: 100%;
+    height: auto;
+    /* position: relative;
+					top: 100px; */
+    text-align: right;
+  }
+  #survival-kit-button {
+    margin: 0;
+    box-sizing: border-box;
+    height: 52px;
+    width: 180px;
+    border: 1px solid white;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    line-height: 26px;
+    /* border-radius: 27px; */
+    background-color: #3d676a;
+  }
+  .video {
+    width: 90vw;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .expert-message {
+    width: 90vw;
+    height: auto;
+    text-align: center;
+  }
+  #categories-card {
+    margin-bottom: 2vh;
+  }
+  .categories-container {
+    justify-content: center;
+  }
+  .heyhey-expert {
+    height: 520px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5vh -0 5vh -0;
+    /* background-color: #f9f8f4; */
+  }
+  .heyhey-expert h1 {
+    line-height: 7vh;
+  }
+  .heyhey-expert p {
+    text-align: left;
+  }
+  #absurd-question-image {
+    /* height: 20vh; */
+    width: 220px;
+    padding-right: 20px;
+  }
+  .top-categories {
+    height: 700px;
+  }
+  .sage-outer-most-container {
+    margin: 0;
+    transform: scale(0.80);
+
+  }
+  .podcast-all-page {
+    margin: 0 5vw 0 5vw;
+  }
+  .podcast-all-page h1 {
+    font-size: 30px;
+  }
+  .podcast-heading-div h2 {
+    font-size: 20px;
+  }
+  .podcast-information {
+    justify-content: space-between;
+  }
+  .podcast-description-div p:last-child {
+    display: none;
+  }
+  .podcast-description-div p:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3d676a;
+  }
+  .podcast-image-div {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .podcast-heading-div p {
+    font-size: 14px;
+    padding-top: 1px;
+  }
+  #podcast-thumbnail-image {
+    width: 100%;
+  }
+  .tip-card-image-div {
+    width: 80px;
+    position: relative;
+    left: -2vw;
+  }
+  #technique-name{  
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  .technique-steps {
+    font-size: 8px;
+    line-height: 9px;
+    margin: 0;
+    padding: 0;
+  }
+  .technique-steps p{
+    margin: 0;
+    padding: 0;
+  }
+  #tip-bulb {
+    height: 60px;
+  }
+  #survival-image {
+    height: 5px;
+    width: auto;
+  }
+  .technique-header-div {
+    font-size: 10px;
+    width: 100%;
+  }
+  .expert-video {
+    width: 40vw;
+    margin-left: 0;
+  }
+  .technique-survival-prize-div {
+    width: 50px;
+  }
+  /* .tip-survival-prize-div {
+    width: 30px;
+  } */
+  .video-section {
+    height: 85vh;
+    /* position: absolute; */
+    left: 5vw;
+    right: 5vw;
+    margin: 5vh 0 5vh 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .video-message {
+    /* border: 1px solid; */
+    padding: 50px 0 0 35px;
+    height: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video-message h1 {
+    width: 100%;
+  }
+  .video-message p {
+    height: none;
+    width: 100%;
+  }
+  #video-about-us-container {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+  #video-start {
+    height: 50px;
+    position: relative;
+    top: 90px;
+    left: 80px;
+  }
+  #about-us-video {
+    height: 200px;
+    width: auto;
+    margin-left: 30px;
+  }
+
+.about-who-are-we {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#who-title {
+  font-size: 5vh;
+  font-family: Hind;
+  width: 80%;
+  margin-left: 12vw;
+}
+#who-description {
+  width: 90%;
+  height: 150px;
+ align-self: center;
+ margin-left: 0;
+  text-align: justify;
+  line-height: 20px;
+
+}
+.about-workers-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 12vw 0 12vw;
+}
+#about-picture {
+  height: 170px;	
+  width: auto;
+}
+.about-workers-card {
+  width: 100%;
+  margin: 15px;
+}
+.about-worker-name {
+  padding-left: 10px;
+}
+.about-worker-name h1{
+  line-height: 34px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.about-worker-name p {
+  font-size: 10px;
+}
+.categories-container {
+  height: 70vh;
+  justify-content: space-between;
+  padding-top: 10px;
+  width: 95%;
+}
+#categories-card {
+  width: 37vw;
+  margin-bottom: 1vh;
+  background-color: #f9f8f4;
+  height: 160px;
+}
+
+#categories-card p {
+  text-align: center;
+  font-size: 12px;
+}
+.profile-page {
+  margin: 0 5vw 0 5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.profile-profile-menu {
+  width: 100%;
+}
+.profile-dashboard-div {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-dashboard-kits {
+  width: 100%;
+}
+.product-kit-page {
+  width: 100%;
+}
+.kit-description-div {
+  width: 350px; 
+}
+.technique-kit-description-p {
+  width: 240px;
+}
+.survival-card-image-div {
+  width: 80px;
+}
+.podcast-header-div h1 {
+  font-size: 18px;
+}
+#categories-podcast {
+  font-size: 12px;
+  /* padding-top: 10px; */
+}
+.podcast-header-div h2 {
+  font-size: 16px;
+}
+.podcast-header-div {
+  height: 18vh;
+}
+.video-youtube-podcast {
+  width: 100%;
+  height: 35vh;
+}
+.podcast-detail-kit-div {
+  width: 100%;
+}
+
+.technique-kit-name-category p {
+  font-size: 25px;
+  line-height: 2px;
+}
+
+#category-bubble-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-family: "Hind", sans-serif;
+  font-size: 12px;
+  color: white;
+  background-color: #f66c4f;
+  height: 25px;
+  width: 80px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.best-book-header h1 {
+  font-size: 30px;
+}
+.best-book-title-div h2 {
+  font-size: 25px;
+}
+.settings-container {
+  width: 90%;
+}
+.category-bubble{
+  min-width: 70px;
+}
+.technique-kit-description-div {
+  height: 90%;
+  width: 80%;
+  font-family: "Hind";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.technique-kit-name-category {
+  height: 25%;
+  color: #f66c4f;
+}
+.technique-kit-name-category h1 {
+  font-size: 45px;
+  line-height: 5px;
+}
+.technique-kit-name-category p {
+  font-size: 20px;
+  line-height: 1px;
+}
+.survival-card-image-div {
+  display: none;
+}
+#survival-title-bookmark-image {
+  height: 25px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.technique-with-category-div {
+  display: flex;
+  /* justify-content: baseline; */
+  /* align-items: center; */
+  flex-direction: row;
+  align-items: baseline;
+}
+#review-survival-title {
+  font-size: 20px;
+}
+.expert-card-container {
+  transform: scale(0.8);
+}
+.expert-card-container-profile {
+  height: 220px;
+  width: 160px;
+}
+#card-kit-title {
+  font-size: 9px;
+}
+#card-kit-name {
+  font-size: 9px;
+}
+.expert-card-name{
+  font-size: 3px;
+}
+.tip-card-image-div {
+  display: none;
+}
+.tip-kit-description {
+  width: 75%;
+}
+
+}

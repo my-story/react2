@@ -1,0 +1,60 @@
+{
+  "name": "frontend-mystory",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.26.14",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "dotenv": "^8.0.0",
+    "email-validator": "^2.0.4",
+    "is-empty-object": "^1.1.1",
+    "js-cookie": "^2.2.0",
+    "next": "^9.3.2",
+    "password-validator": "^4.1.1",
+    "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-bootstrap": "^1.0.0",
+    "react-burger-menu": "^2.6.13",
+    "react-confirm-alert": "^2.6.1",
+    "react-dom": "^16.13.1",
+    "react-dropdown": "^1.7.0",
+    "react-helmet": "^5.2.1",
+    "react-iframe": "^1.8.0",
+    "react-responsive": "^8.0.3",
+    "react-responsive-modal": "^4.0.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.4.1",
+    "react-share": "^3.0.0",
+    "react-slick": "^0.24.0",
+    "react-stripe-elements": "^3.0.0",
+    "react-vis": "^1.11.7",
+    "reactstrap": "^8.4.1",
+    "slick-carousel": "^1.8.1",
+    "toastr": "^2.1.4",
+    "universal-cookie": "^4.0.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
