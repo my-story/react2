@@ -48,7 +48,7 @@ class InfluencerList extends Component {
           <div className="expert-section">
             <div className="expert-div">
             <div className="expert-message">
-              <p> Find the tools to overcome your adversities.</p>
+              <h1> Find the tools to overcome your adversities.</h1>
               <div className="expert-message-p-div">
               <p id="expert-message-description">
               We talk to professionals that have dealt with tremendous adversity, and find out what tips, 
@@ -90,25 +90,25 @@ class InfluencerList extends Component {
           <div className="top-categories">
             <h2><b>Top Categories</b></h2>
             <div className="categories-container">
-            <Link href={{ pathname: '/kits', query: { info: 'Addiction' } }}>
+            <Link href={{ pathname: '/podcasts', query: { info: 'Addiction' } }}>
               <div id="categories-card">
-                <div id="blue-dash"><img id="category-on-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1567790965/icons8-sport-96_1.png" alt="category" /></div>
+                {/* <div id="blue-dash"><img id="category-on-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1567790965/icons8-sport-96_1.png" alt="category" /></div> */}
                 <p><b>Addiction</b></p>
-                <div id="dash-under"></div>
+                {/* <div id="dash-under"></div> */}
               </div>
             </Link>
-            <Link href={{ pathname: '/kits', query: { info: 'Cognitive Skills' } }}>
+            <Link href={{ pathname: '/podcasts', query: { info: 'Cognitive Skills' } }}>
               <div id="categories-card">
-                <div id="blue-dash"><img id="category-on-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1567790640/icons8-paragraph-96_1.png" alt="category" /></div>             
+                {/* <div id="blue-dash"><img id="category-on-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1567790640/icons8-paragraph-96_1.png" alt="category" /></div>              */}
                 <p><b>Cognitive Skills</b></p>
-                <div id="dash-under"></div>
+                {/* <div id="dash-under"></div> */}
               </div>
             </Link>
-            <Link href={{ pathname: '/kits', query: { info: 'Spirituality' } }}>
+            <Link href={{ pathname: '/podcasts', query: { info: 'Spirituality' } }}>
               <div id="categories-card">
-                <div id="blue-dash"><img id="category-on-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1567790797/icons8-comedy-100_2.png" alt="category" /></div>              
+                {/* <div id="blue-dash"><img id="category-on-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1567790797/icons8-comedy-100_2.png" alt="category" /></div>               */}
                 <p><b>Spirituality</b></p>
-                <div id="dash-under"></div>
+                {/* <div id="dash-under"></div> */}
               </div>
             </Link>
             </div>

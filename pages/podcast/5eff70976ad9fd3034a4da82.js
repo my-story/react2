@@ -16,9 +16,9 @@ class PodcastDetail extends Component {
     }
 
     fetchPodcast = () => {
-        const {id} = this.props;
+        // const {id} = this.props;
         
-        PodcastServices.getOne(id)
+        PodcastServices.getOne("5eff70976ad9fd3034a4da82")
             .then((podcast) => {
                 this.setState({podcast})
                 this.fetchKits(podcast.influencer._id)
@@ -38,7 +38,7 @@ class PodcastDetail extends Component {
 
     render(){
         const {podcast} = this.state;
-        console.log(this.state)
+        
         if (podcast === "" || this.state.kits === "") {
             return(<div></div>)
         } else {

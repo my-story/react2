@@ -3,7 +3,7 @@ import Link from 'next/link';
 import PodcastServices from '../services/PodcastServices';
 import PodcastCard from '../components/podcast/PodcastCard';
 import CategoryBubbleOne from '../components/category/CategoryBubbleOne';
-import { Input } from 'antd';
+import EmailBox from '../components/email/EmailBox';
 
 
 class Podcasts extends Component {
@@ -23,9 +23,17 @@ class Podcasts extends Component {
     }))
     .catch(err => console.log(err))
   }
-  componentDidMount() {
-    this.fetchPodcasts();
-  };
+
+
+  componentDidMount(){
+    if (this.props.info) {
+      PodcastServices.searchPodcast(this.props.info)
+        .then((podcasts) => this.setState({ podcasts }))
+        .catch((err) => console.log(err))
+    } else {
+      this.fetchPodcasts();
+    }
+};
 
   searchBar = (e) => {
     if(e === "All"){
@@ -52,11 +60,7 @@ class Podcasts extends Component {
               <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9yZWJvdW5kdGFsa3MubGlic3luLmNvbS9yc3M?ved=2ahUKEwiYhubH37vqAhUtTjABHeH-D90Q4aUDegQIARAC" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145439/Google_Podcasts_Logo.png" alt="itunes-logo" /></a>
             </div>
             <div className="email-div">
-              <div className="email-box">
-              <p>Get the new episodes and exclusive tips/tools and techniques</p>
-              <Input name="email" placeholder="Subscribe to our newsletter" id="input-newsletter" allowClear onChange={this.onChange} />
-              </div>
-
+              <EmailBox></EmailBox>
             </div>
           </div>
             <div className="category-bar"> 

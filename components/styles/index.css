@@ -1,7 +1,7 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
   
 body {
   margin: 0;
@@ -928,11 +928,13 @@ margin: 0 10px 0 10px;
   width: 60%;
 }
 
-.expert-message p {
-  font-size: 5vh;
-  font-family: "Hind";
-  font-weight: bold;
+.expert-message h1 {
+  font-size: 9vh;
+  /* font-family: "Hind"; */
+  font-family: 'EB Garamond', serif;
+  /* font-weight: bold; */
   line-height: 7.5vh;
+  margin-bottom: 30px;
 }
 
 #skip-intro {
@@ -1347,12 +1349,18 @@ height: 3vh;
   width: 220px;
   margin-right: 10px;
   margin-bottom: 20px;
-  background-color: #f9f8f4;
+  /* background-color: #f9f8f4; */
+  background-image: url("https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594230733/green-vector-art.jpg");
+  background-size: cover;
   height: 260px;
 }
 #categories-card p {
   text-align: center;
-  font-size: 120%;
+  font-size: 5vh;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+  font-family: 'EB Garamond', serif;
+
 }
 .category-image {
   height: 3vh;
@@ -1379,7 +1387,7 @@ height: 3vh;
   align-items: baseline;
   width: 100%;
   margin-top: 4vh;
-  min-height: 100px;
+  min-height: 60px;
 }
 .category-bar-index {
   display: flex;
@@ -3882,12 +3890,13 @@ color: black;
   color: gray;
 }
 .podcast-title-div {
-  height: 30vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
   align-content: center;
+  margin-top: 80px;
 }
 .subscribe-div {
   margin-bottom: 30px;
@@ -3902,17 +3911,47 @@ color: black;
 }
 .email-div {
 /* margin-top: 20px; */
-margin-bottom: 40px;
+margin-bottom: 55px;
 
-  height: 100px;
+  height: 180px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .email-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
   width: 350px; 
+  border: 1px solid;
+  padding: 10px 1vw 10px 1vw;
 }
 #input-newsletter {
   height: 30px;
+}
+#subscribe-button {
+  margin-top: 1vh;
+    box-sizing: border-box;
+    height: 48px;
+    width: 180px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    /* letter-spacing: 0.2px; */
+    /* line-height: 26px; */
+    background-color: rgb(61, 103, 106);
+    /* border-width: initial; */
+    /* border-style: none; */
+    border-color:#f66c4f;
+    /* border-image: initial; */
+    border-radius: 27px;
+}
+#subscribe-button:hover {
+
+    color: white;
+    background-color: #f66c4f;
+    border-color:rgb(61, 103, 106);
+
 }
