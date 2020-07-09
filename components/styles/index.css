@@ -3806,6 +3806,9 @@ color: black;
   margin-top: 5vh;
   width: 80%;
 }
+.podcast-detail-description-div h2 {
+  font-size: 3vh;
+}
 .podcast-detail-kit-div {
   /* margin: 0 12vw 0 12vw; */
   width: 50%;
@@ -3898,9 +3901,7 @@ color: black;
   align-content: center;
   margin-top: 80px;
 }
-.subscribe-div {
-  margin-bottom: 30px;
-}
+
 .podcast-subscribe {
   height: 40px;
   width: 40px;
@@ -3925,8 +3926,9 @@ margin-bottom: 55px;
   justify-content: center;
   text-align: center;
   width: 350px; 
-  border: 1px solid;
+  /* border: 1px solid; */
   padding: 10px 1vw 10px 1vw;
+  /* align-self: center; */
 }
 #input-newsletter {
   height: 30px;
@@ -3935,7 +3937,7 @@ margin-bottom: 55px;
   margin-top: 1vh;
     box-sizing: border-box;
     height: 48px;
-    width: 180px;
+    width: 140px;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -3954,4 +3956,29 @@ margin-bottom: 55px;
     background-color: #f66c4f;
     border-color:rgb(61, 103, 106);
 
+}
+.share-div {
+  display: flex;
+  flex-direction: row;
+  width: 160px;
+  /* border: 1px solid; */
+  justify-content: space-evenly;
+  align-items: baseline;
+
+}
+.show-notes-div {
+  width: 80%;
+}
+.show-notes-div h2 {
+  font-size: 3vh;
+}
+.subscribe-div {
+  margin-bottom: 30px;
+  width: 80%;
+}
+.subscribe-div h2 {
+  font-size: 3vh;
+}
+.subscribe-div p {
+  width: 50vw;
 }

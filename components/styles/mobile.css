@@ -347,8 +347,8 @@
   }
 
   .podcast-title-div {
-    margin-top: 120px;
-    height: 40vh;
+    margin-top: 180px;
+    height: 45vh;
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
@@ -403,14 +403,21 @@
   }
   #expert-message-description {
     width: 100%;
+    font-size: 2.5vh;
   }
   .expert-message {
-    /* height: 45vh; */
+
     width: 100%;
     height: auto;
-    /* position: relative;
-					top: 100px; */
-    text-align: right;
+      text-align: center;
+  }
+  .expert-message h1 {
+    font-size: 5vh;
+    /* font-family: "Hind"; */
+    font-family: 'EB Garamond', serif;
+    /* font-weight: bold; */
+    line-height: 5vh;
+    margin-bottom: 30px;
   }
   #survival-kit-button {
     margin: 0;
@@ -433,11 +440,7 @@
     top: 0;
     left: 0;
   }
-  .expert-message {
-    width: 90vw;
-    height: auto;
-    text-align: center;
-  }
+
   #categories-card {
     margin-bottom: 2vh;
   }
@@ -795,5 +798,10 @@
 .tip-kit-description {
   width: 75%;
 }
-
+.subscribe-div p {
+  width: 100%;
+}
+.email-box {
+  width: 250px; 
+}
 }

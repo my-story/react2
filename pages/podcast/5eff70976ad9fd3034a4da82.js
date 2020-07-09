@@ -4,6 +4,9 @@ import KitServices from "../../services/KitServices";
 // import SurvivalKit from "../../components/survivalKit/SurvivalKit";
 import KitCard from "../../components/survivalKit/KitCard";
 import Iframe from 'react-iframe';
+import {FacebookShareButton, TwitterShareButton,  WhatsappShareButton} from "react-share";
+import EmailBox from "../../components/email/EmailBox";
+
 
 class PodcastDetail extends Component {
     state = {
@@ -59,17 +62,20 @@ class PodcastDetail extends Component {
                             <div>
                                 <h2>{podcast.influencer.name.firstName} {podcast.influencer.name.lastName} | {podcast.time}</h2>
                             </div>
-                            <div>
+                            <div className="share-div">
                                 <p>Share</p>
+                                <WhatsappShareButton url={"zapos.com"}><img className="instagram" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1565290822/instagram.svg" alt="instagram button"/></WhatsappShareButton>
+                                <FacebookShareButton url={"headspace.com"}><img className="instagram" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1566411204/facebook.svg" alt="facebook button"/></FacebookShareButton>
+                                <TwitterShareButton url={"amazon.com"}><img className="instagram" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1566411510/twitter.svg" alt="twitter button"/></TwitterShareButton>
                             </div>
                         </div>
                     </div>
                     <div className="podcast-detail-description-div">
                         <p>{podcast.description}</p>
-                        <h4>Who is {podcast.influencer.name.firstName} {podcast.influencer.name.lastName} ?</h4>
+                        <h2>Who is {podcast.influencer.name.firstName} {podcast.influencer.name.lastName} ?</h2>
                             <p>{podcast.influencer.description}</p>
                     </div>
-                    <div className="podcast-detail-kit-div">
+                    {/* <div className="podcast-detail-kit-div">
                         <p id="survival-kit-word">SURVIVAL KITS</p>
                         <div className="kits-all-section">
                             {this.state.kits.map((i, index) => {
@@ -78,6 +84,20 @@ class PodcastDetail extends Component {
                                 )
                             })}
                         </div>
+                    </div> */}
+                    <div className="show-notes-div">
+                        <h2>Show notes:</h2>
+                        <ul>
+                            <li>Edtudio del q tal</li>
+                            <li>Libro de Pennebaker</li>
+                            <li>Supiste ? metele</li>
+
+                        </ul>
+                    </div>
+                    <div className="subscribe-div">
+                        <h2>Subscribe</h2>
+                        <p>We send our community the best tools to overcome any adversity. With the help of experts of different fields, we experiment with top of the line solutions to everyday problems.</p>
+                        <EmailBox></EmailBox>
                     </div>
                 </div>
             )
