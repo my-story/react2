@@ -19,13 +19,13 @@ const PhoneNavBar = (props) => {
             <Collapse isOpen={!collapsed} navbar>
               <Nav navbar>
                 <NavItem>
-                  <NavLink href="/podcasts">Podcast</NavLink>
+                  <NavLink id="nav-word" href="/podcasts">Podcast</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/contact-us">Contact</NavLink>
+                  <NavLink id="nav-word"  href="/contact-us">Contact</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/about">About us</NavLink>
+                  <NavLink id="nav-word" href="/about">About us</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

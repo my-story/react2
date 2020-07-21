@@ -1682,6 +1682,7 @@ justify-content: flex-end;
 .styles_modal__gNwvD {
   background-color: #f3f2eb;
   font-family: "Hind", sans-serif;
+  width: 60%;
 }
 #pop-up-bttn {
   background-color: #F66C4F;
@@ -1823,6 +1824,11 @@ test cards new ones - REVIEW
   display: flex;
   flex-direction: flex-start;
 }
+#nav-word {
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 0.5px solid;
+}
 .about-heading span {
   display: inline;
   font-family: Hind;
@@ -1834,14 +1840,14 @@ test cards new ones - REVIEW
 .about-description {
   /* height: 30vh; */
   width: 100%;
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
 }
-.description {
+.description-about {
   font-family: Arial, Helvetica, san-serif;
-;
-  height: 15vh;
-  width: 36vw;
-  margin-left: 15vw;
+  width: 80%;
+
   text-align: justify;
 }
 .about-who-are-we {
@@ -3554,9 +3560,9 @@ margin-bottom: 2vh;
   margin-left: calc(50% - 90px);
 }
 .best-book-pictures {
-  width: 45%;
-  display: flex;
-  flex-direction: row;
+  width: 35%;
+  /* display: flex;
+  flex-direction: row; */
 }
 #best-book-cover {
   height: auto;
@@ -3581,7 +3587,6 @@ margin-bottom: 2vh;
   border-radius: 25px;
   position: relative;
   left: 150px;  
-
 }
 .best-book-title-div {
   margin-top: 2vh;
@@ -3696,6 +3701,7 @@ color: black;
 .podcast-all-page {
   margin: 0 12vw 0 12vw;
   background-color: white;
+  height: auto;
 }
 .podcast-image-div {
   /* width: 2%; */
@@ -3768,6 +3774,7 @@ color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 5vw 0 5vw;
 }
 .video-youtube-podcast {
   width: 80%;
@@ -3975,10 +3982,34 @@ margin-bottom: 55px;
 .subscribe-div {
   margin-bottom: 30px;
   width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.subscribe-podcast {
+  margin-top: 30px;
+  /* width: 80%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
 }
 .subscribe-div h2 {
   font-size: 3vh;
 }
 .subscribe-div p {
   width: 50vw;
+}
+.line-after-subscribe {
+  border-bottom: 1px black;
+  width: 80%;
+}
+.line-full {
+  border-bottom: 1px black;
+  width: 100%;
+}
+.subscribe-detail-div {
+  width: 50%;
 }

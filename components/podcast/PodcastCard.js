@@ -47,6 +47,9 @@ class PodcastCard extends Component {
                             <h2><b>{this.props.podcast.influencer.name.firstName} {this.props.podcast.influencer.name.lastName}</b></h2>
                             <p>{this.props.podcast.time}</p>
                         </div>
+                        {/* <hr></hr> */}
+            <hr className="line-full"></hr>
+
                         <div className="podcast-description-div">
                         <p>{this.props.podcast.title}</p>
                         {/* <p>{podcast.description}</p> */}

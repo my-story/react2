@@ -30,7 +30,7 @@ class Contact extends Component {
         return(
 
             <div className="contact-page">
-                <h1> Contact us - <br></br>warm response guaranteed  </h1>
+                <h1> Contact us - warm response guaranteed!</h1>
                 <div className="contact-section">
                     <div className="contact-inputs">
                         <div>

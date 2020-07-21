@@ -164,7 +164,7 @@ class InfluencerList extends Component {
                   <p>We greatly appreciate you feedback!</p>
                   </div>
                   <ol className="questions-pop-up">
-                    <li id="question-modal">Have you enjoyed the overall experience of the application?</li>
+                    {/* <li id="question-modal">Have you enjoyed the overall experience of the application?</li>
                     <div id="number-bar" className="btn-group mr-2" role="group" aria-label="First group" clicked>
                       <button type="button" id="pop-up-bttn" className="btn btn-secondary">1</button>
                       <button type="button" id="pop-up-bttn" className="btn btn-secondary">2</button>
@@ -191,7 +191,7 @@ class InfluencerList extends Component {
                           No
                         </label>
                       </div>
-                      </div>
+                      </div> */}
                     <li id="question-modal">If you would like to see something improve in this page what would it be?</li>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </ol>

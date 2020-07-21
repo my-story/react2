@@ -41,18 +41,16 @@ class PodcastDetail extends Component {
 
     render(){
         const {podcast} = this.state;
-        
+        const {url} = window.location.href;
+
+        // console.log(url);
+        console.log(window.location.href); 
+
         if (podcast === "" || this.state.kits === "") {
             return(<div></div>)
         } else {
             return(
                 <div className="podcast-detail-page">
-                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/14252078/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/"
-                            width="80%"
-                            height="95px"
-                            className="podcast-embed"
-                            display="initial"
-                            position="relative"/>
 
                     <div className="podcast-header-div">
                             <p id="categories-podcast">Categories </p>
@@ -70,6 +68,22 @@ class PodcastDetail extends Component {
                             </div>
                         </div>
                     </div>
+                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/14252078/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/"
+                            width="80%"
+                            height="95px"
+                            className="podcast-embed"
+                            display="initial"
+                            position="relative"/>
+                    <div className="subscribe-podcast">
+                    
+                        <p><b>Subscribe on</b></p>
+                        <a  href="https://podcasts.apple.com/us/podcast/the-rebound-talks/id1511330975" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145439/itunes-logo-podcast.png" alt="itunes-logo" /></a>
+                        <a href="https://open.spotify.com/show/25dIWTvKIYcbPdssLu0e8M" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145464/spotify-logo-black-png-4.png" alt="spotify-logo" /></a>
+                        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9yZWJvdW5kdGFsa3MubGlic3luLmNvbS9yc3M?ved=2ahUKEwiYhubH37vqAhUtTjABHeH-D90Q4aUDegQIARAC" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145439/Google_Podcasts_Logo.png" alt="itunes-logo" /></a>
+                    </div>
+                     <hr className="line-after-subscribe"></hr>
+
+                
                     <div className="podcast-detail-description-div">
                         <p>{podcast.description}</p>
                         <h2>Who is {podcast.influencer.name.firstName} {podcast.influencer.name.lastName} ?</h2>
@@ -88,7 +102,7 @@ class PodcastDetail extends Component {
                     <div className="show-notes-div">
                         <h2>Show notes:</h2>
                         <ul>
-                            <li>Edtudio del q tal</li>
+                            <li>Edtudio del q tal <a href="google.com">Hola</a></li>
                             <li>Libro de Pennebaker</li>
                             <li>Supiste ? metele</li>
 
@@ -97,8 +111,11 @@ class PodcastDetail extends Component {
                     <div className="subscribe-div">
                         <h2>Subscribe</h2>
                         <p>We send our community the best tools to overcome any adversity. With the help of experts of different fields, we experiment with top of the line solutions to everyday problems.</p>
-                        <EmailBox></EmailBox>
                     </div>
+                    <div className="subscribe-detail-div">
+                    <EmailBox></EmailBox>
+                    </div>
+
                 </div>
             )
         }
