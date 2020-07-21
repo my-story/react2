@@ -101,7 +101,7 @@ class PodcastDetail extends Component {
                     </div> */}
                     <div className="show-notes-div">
                         <h2>Show notes:</h2>
-                        <ul>
+                        <ul className="show-notes-ul">
                             <li>Edtudio del q tal <a href="google.com">Hola</a></li>
                             <li>Libro de Pennebaker</li>
                             <li>Supiste ? metele</li>

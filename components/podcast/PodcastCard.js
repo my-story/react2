@@ -37,7 +37,7 @@ class PodcastCard extends Component {
         //     return(<div></div>)
         // } else {
             return (
-                <Link href="/podcast/[id]" as={`/podcast/${this.props.podcast._id}`} key={this.props.index} prefetch>
+                <Link href="/rebound-talks/[id]" as={`/rebound-talks/${this.props.podcast._id}`} key={this.props.index} prefetch>
                 <div className="podcast-outer-card">
                     <div className="podcast-image-div">
                         <img id="podcast-thumbnail-image" src={this.props.podcast.image} alt="Podcast Thumbnail" />

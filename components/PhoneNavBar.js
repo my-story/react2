@@ -19,7 +19,7 @@ const PhoneNavBar = (props) => {
             <Collapse isOpen={!collapsed} navbar>
               <Nav navbar>
                 <NavItem>
-                  <NavLink id="nav-word" href="/podcasts">Podcast</NavLink>
+                  <NavLink id="nav-word" href="/rebound-talks">Podcast</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink id="nav-word"  href="/contact-us">Contact</NavLink>

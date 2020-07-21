@@ -133,7 +133,7 @@ class InfluencerList extends Component {
               <div className="best-book-info-div">
                 <div className="best-book-pictures">
                   <img id="best-book-cover" src="https://miro.medium.com/max/3000/1*r6rpoanJHbvwZpSW7mZjzg.jpeg" alt="Book Cover" />
-                  <img id="best-book-author" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Robert_Greene_B%26W.jpg" alt="Author Picture" />
+                  {/* <img id="best-book-author" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Robert_Greene_B%26W.jpg" alt="Author Picture" /> */}
                 </div>
                 <div className="best-book-title-div">
                   <h2>The Alchemist, 25th Anniversary: A Fable About Following Your Dream </h2>

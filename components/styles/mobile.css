@@ -72,7 +72,7 @@
   .mobile-login-page {
     display: flex;
     justify-content: center;
-    background-color: #3d676a;
+    background-color: #5ca7a7;
     height: 90vh;
   }
   .mobile-login-form {
@@ -175,7 +175,7 @@
   }
   .terms-first-p {
     font-family: Arial, Helvetica, san-serif;
-    color: #3d676a;
+    color: #5ca7a7;
     width: 100%;
     font-size: 2vh;
     margin-right: 14vw;
@@ -370,9 +370,9 @@
     width: auto;
     border-radius: 25px;
     /* border-radius: 50%; */
-    position: relative;
-    top: 50px;
-    right: 20px;
+    
+    
+    right: 500px;
   }
   #podcast-guest {
     /* align-self: center; */
@@ -434,7 +434,7 @@
     letter-spacing: 0.2px;
     line-height: 26px;
     /* border-radius: 27px; */
-    background-color: #3d676a;
+    background-color: #5ca7a7;
   }
   .video {
     width: 90vw;
@@ -495,7 +495,7 @@
   .podcast-description-div p:first-child {
     font-size: 14px;
     font-weight: bold;
-    color: #3d676a;
+    color: #5ca7a7;
   }
   .podcast-image-div {
     width: 40%;

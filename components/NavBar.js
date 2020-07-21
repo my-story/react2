@@ -60,7 +60,7 @@ class NavBar extends Component {
 								<p>HOME</p>
 							</span>
 						</Link>
-						<Link href="/podcasts">
+						<Link href="/rebound-talks">
 							<span>
 								<p>PODCASTS</p>
 							</span>
