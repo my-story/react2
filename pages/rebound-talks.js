@@ -12,6 +12,7 @@ class Podcasts extends Component {
     category: [
       "All","Sports", "Music", "Tech", "Clothes"
     ],
+    height: 0,
   };
 
 
@@ -33,6 +34,7 @@ class Podcasts extends Component {
     } else {
       this.fetchPodcasts();
     }
+    this.setState({height: window.innerHeight + 'px'});
 };
 
   searchBar = (e) => {
@@ -46,15 +48,15 @@ class Podcasts extends Component {
   };
   
   render() {
-    const {podcasts , category} = this.state;
+    const {podcasts , category, height} = this.state;
     console.log(podcasts);
 
     return (
-        <div className="podcast-all-page">
+        <div className="podcast-all-page" height={height}>
           <div className="podcast-title-div">
             <h1><b>Rebound Talks</b></h1>
             <p>Have you ever wondered why some people grow after setbacks and some don’t? We are college students obsessed with answering this question. We created this podcast to hunt down the best tools, tips, and techniques to overcome the unique adversity that college students regularly face.</p>
-            <div className="subscribe-div">
+            <div className="subscribe-box">
               <a  href="https://podcasts.apple.com/us/podcast/the-rebound-talks/id1511330975" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145439/itunes-logo-podcast.png" alt="itunes-logo" /></a>
               <a href="https://open.spotify.com/show/25dIWTvKIYcbPdssLu0e8M" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145464/spotify-logo-black-png-4.png" alt="spotify-logo" /></a>
               <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9yZWJvdW5kdGFsa3MubGlic3luLmNvbS9yc3M?ved=2ahUKEwiYhubH37vqAhUtTjABHeH-D90Q4aUDegQIARAC" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145439/Google_Podcasts_Logo.png" alt="itunes-logo" /></a>

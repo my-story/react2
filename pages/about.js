@@ -1,8 +1,11 @@
 import React from 'react';
 
+
 function About(){
+    const height = window.innerHeight + 'px';
+
     return(
-        <div className="about-page">
+        <div className="about-page" height={height}>
           	<div className="about-heading">
             	<div>
             	<span><b>We are in the quest for improving</b></span>

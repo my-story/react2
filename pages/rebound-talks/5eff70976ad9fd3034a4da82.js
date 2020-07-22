@@ -53,7 +53,13 @@ class PodcastDetail extends Component {
                 <div className="podcast-detail-page">
 
                     <div className="podcast-header-div">
-                            <p id="categories-podcast">Categories </p>
+                        <div className="podcast-categories">
+                            <p id="categories-podcast">#Categories </p>
+                            <p id="categories-podcast">#Categories </p>
+
+                        
+                            </div>
+
                 
                             <h1>{podcast.title}</h1>
                         <div className="name-and-share">

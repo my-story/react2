@@ -5,7 +5,13 @@ import EmailServices from "../services/EmailServices"
 class Contact extends Component {
     state = {
         email: "",
-        name: ""
+        name: "",
+        height: 0,
+    }
+
+    componentWillMount() {
+    this.setState({height: window.innerHeight + 'px'});
+
     }
 
     onChange = (e) => {
@@ -27,9 +33,11 @@ class Contact extends Component {
     }
     
     render(){
+
+        const height = this.state;
         return(
 
-            <div className="contact-page">
+            <div className="contact-page" height={height}>
                 <h1> Contact us - warm response guaranteed!</h1>
                 <div className="contact-section">
                     <div className="contact-inputs">

@@ -868,7 +868,7 @@ background: none;
 /* Index */
 .index-page {
   margin: 0;
-  height: 380vh;
+  /* height: 380vh; */
   background-color: white;
 }
 /* Expert Section */
@@ -1326,51 +1326,12 @@ height: 3vh;
 
 /* Categories Section */
 .top-categories {
-  margin-top: 5vh;
-  /* height: 50vh; */
+  /* margin-top: 5vh; */
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-}
-.categories-container {
-  /* height: 40vh; */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 35px;
-}
-#categories-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 220px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  /* background-color: #f9f8f4; */
-  background-image: url("https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594230733/green-vector-art.jpg");
-  background-size: cover;
-  height: 260px;
-}
-#categories-card p {
-  text-align: center;
-  font-size: 5vh;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color: white;
-  font-family: 'EB Garamond', serif;
-
-}
-.category-image {
-  height: 3vh;
-  align-self: center;
-}
-#dash-under {
-  align-self: center;
-  height: 0.25vh;
-  width: 4vw;
-  background-color: #f66c4f;
 }
 
 /* .category-glyph-div {
@@ -1396,8 +1357,8 @@ height: 3vh;
   align-items: baseline;
   justify-content: center;
   width: 90%;
-  margin-top: 4vh;
-  height: 10vh;
+  /* margin-top: 4vh; */
+  /* height: 10vh; */
 
 }
 .bar-categories-div {
@@ -1411,13 +1372,14 @@ height: 3vh;
 
 .category-bubble{
   font-family: "Hind";
-  font-size: 15px;
+  font-size: 18px;
   padding: 0 10px 0 10px;
   color: black;
   background-color: #f9f8f4;
-  height: 23px;
+  height: 42px;
+  min-width: 80px;
   border-radius: 20px;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin: 0 0.5vw 2vh 0.5vw;
   display: flex;
   align-items: center;
@@ -1806,9 +1768,6 @@ test cards new ones - REVIEW
   display: flex;
   flex-direction: row;
   /* border: 1px solid; */
-}
-.about-page {
-  height: 250vh;
 }
 .about-heading {
   height: 19vh;
@@ -3701,7 +3660,7 @@ color: black;
 .podcast-all-page {
   margin: 0 12vw 0 12vw;
   background-color: white;
-  height: auto;
+  /* height: auto; */
 }
 .podcast-image-div {
   /* width: 2%; */
@@ -3721,10 +3680,12 @@ color: black;
   display: flex;
   flex-direction: row;
   background-color: #F7F7F7;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin-bottom: 2vh;
 }
 .podcast-outer-card:hover {
   cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .podcast-outer-card:hover #podcast-thumbnail-image {
   transform: scale(1.2);
@@ -3780,25 +3741,31 @@ color: black;
   width: 80%;
   height: 70vh;
 }
+.podcast-categories {
+  display: flex;
+  flex-direction: row;
+}
 .podcast-header-div {
   margin-top: 2vh;
   padding: 0 10vw 0 10vw;
   width: 100%;
-  height: 15vh;
+  height: 20vh;
   line-height: 15px;
-  background-color: #f9f8f4;
+  /* background-color: #f9f8f4; */
+  /* border: 1px solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .podcast-header-div h1 {
-  font-size: 30px;
+  font-size: 45px;
   font-family: "Hind";
   font-weight: bold;
 }
 #categories-podcast {
   font-size: 15px;
   color: #5ca7a7;
+  margin-right: 10px;
 }
 .podcast-header-div h2 {
   font-size: 20px;
@@ -3932,19 +3899,28 @@ margin-bottom: 55px;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
-  width: 350px; 
+  width: 480px; 
   /* border: 1px solid; */
   padding: 10px 1vw 10px 1vw;
   /* align-self: center; */
 }
+.email-box div {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid 1px; */
+  width: 100%;
+}
 #input-newsletter {
   height: 30px;
+}
+#subscribe-input {
+  width: 300px;
 }
 #subscribe-button {
   margin-top: 1vh;
     box-sizing: border-box;
     height: 48px;
-    width: 140px;
+    width: 120px;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -3978,6 +3954,14 @@ margin-bottom: 55px;
 }
 .show-notes-div h2 {
   font-size: 3vh;
+}
+.subscribe-box {
+  margin-bottom: 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .subscribe-div {
   margin-bottom: 30px;

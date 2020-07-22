@@ -16,9 +16,10 @@ import KitMap from '../components/survivalKit/KitMap';
 class InfluencerList extends Component {
   state = {
     category: [
-      "All", "Addiction","Cognitive Skills", "Spirituality"
+      "All", "Addiction","Cognitive Skills", "Spirituality" , "Running" , "Neuroscience" , "Psychology" , "Fear"
     ],
     search_expert:[],
+    height: 0,
     open: false
   }
 
@@ -32,12 +33,15 @@ class InfluencerList extends Component {
   onCloseModal = () => {
     this.setState({ open: false });
   };
+  componentWillMount = () => {
+    this.setState({height: window.innerHeight + 'px'});
+  }
 
   render() {
-    const { open, category, kits } = this.state
+    const { open, category, kits,height } = this.state
 
       return (
-        <div className="index-page">
+        <div className="index-page" height={height}>
           <Helmet>
           <meta charSet="utf-8" />
           <title>Rebound Sages</title>
@@ -55,7 +59,7 @@ class InfluencerList extends Component {
               techniques and products they used especifically for overcoming that problem.
               </p>
               </div>
-             <Link href="podcasts"><button id="survival-kit-button">SEE ALL PODCASTS</button></Link> 
+             <Link href="rebound-talks"><button id="survival-kit-button">SEE ALL PODCASTS</button></Link> 
             </div>
               {/* <img id="expert-illustration" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1565380238/3260_Converted.png" alt="expert illustration" /> */}
               {/* <img className="background-blue-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1565380557/Bitmap_Copy.png" alt="blue-dash"/> */}
@@ -83,37 +87,13 @@ class InfluencerList extends Component {
                 </div>
               </div>
               {/* <span id="see-all-podcast"><a href="/podcasts">See All Podcast</a></span> */}
-             <Link href="podcasts"><button id="survival-kit-button2">SEE ALL PODCASTS</button></Link> 
+             <Link href="rebound-talks"><button id="survival-kit-button2">SEE ALL PODCASTS</button></Link> 
 
               </div>
-  
           <div className="top-categories">
-            <h2><b>Top Categories</b></h2>
-            <div className="categories-container">
-            <Link href={{ pathname: '/podcasts', query: { info: 'Addiction' } }}>
-              <div id="categories-card">
-                {/* <div id="blue-dash"><img id="category-on-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1567790965/icons8-sport-96_1.png" alt="category" /></div> */}
-                <p><b>Addiction</b></p>
-                {/* <div id="dash-under"></div> */}
-              </div>
-            </Link>
-            <Link href={{ pathname: '/podcasts', query: { info: 'Cognitive Skills' } }}>
-              <div id="categories-card">
-                {/* <div id="blue-dash"><img id="category-on-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1567790640/icons8-paragraph-96_1.png" alt="category" /></div>              */}
-                <p><b>Cognitive Skills</b></p>
-                {/* <div id="dash-under"></div> */}
-              </div>
-            </Link>
-            <Link href={{ pathname: '/podcasts', query: { info: 'Spirituality' } }}>
-              <div id="categories-card">
-                {/* <div id="blue-dash"><img id="category-on-dash" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1567790797/icons8-comedy-100_2.png" alt="category" /></div>               */}
-                <p><b>Spirituality</b></p>
-                {/* <div id="dash-under"></div> */}
-              </div>
-            </Link>
-            </div>
-          </div>
-          <div className="category-bar-index"> 
+  
+              <h2><b>Rebound Talks Topics</b></h2>
+              <div className="category-bar-index"> 
             {/* <p><b className="all-categories-p">All Categories: </b></p> */}
             <div className="bar-categories-div">
               {category.map((category, index) => {
@@ -125,6 +105,10 @@ class InfluencerList extends Component {
                })}
             </div>
           </div>
+
+            
+          </div>
+
   
               <div className="index-best-book-div">
               <div className="best-book-header">

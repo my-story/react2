@@ -29,6 +29,7 @@ const SimpleForm = ({ status, message, className, style, onSubmitted }) => {
         ref={node => (input = node)}
         type="email"
         placeholder="Your email"
+        id="subscribe-input"
       />
       <button id="subscribe-button" onClick={submit}>Subscribe</button>
     </div>
