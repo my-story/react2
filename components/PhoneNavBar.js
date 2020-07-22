@@ -10,7 +10,7 @@ const PhoneNavBar = (props) => {
   const toggleNavbar = () => setCollapsed(!collapsed);
  
     return (
-        <div>
+        <div className="nav-bar-outer">
           <Navbar color="faded" light>
             <NavbarBrand href="/" className="mr-auto">
                 <img id="logo-rebound-mobile" src={Logo} />										

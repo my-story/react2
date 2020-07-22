@@ -48,6 +48,16 @@ class InfluencerList extends Component {
           <link rel="canonical" href="http://mysite.com/example" />
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/64/000000/circled-down.png" type="image/x-icon"></link>
+          <script>
+    {(function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1913965,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')}
+</script>
           </Helmet>
           <div className="expert-section">
             <div className="expert-div">

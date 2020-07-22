@@ -2757,9 +2757,9 @@ left: 1vw;
   line-height: 26px;
   border-radius: 27px;
   background-color: #5ca7a7;
-  position: relative;
+  position: relative; 
   left: calc(50% - 90px);
-  top: 70px;
+   top: 70px;
 }
 .survival-kit-add-to-cart {
   box-sizing: border-box;	
@@ -3546,6 +3546,7 @@ margin-bottom: 2vh;
   border-radius: 25px;
   position: relative;
   left: 150px;  
+  overflow: none;
 }
 .best-book-title-div {
   margin-top: 2vh;
