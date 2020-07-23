@@ -47,7 +47,7 @@
     margin: 0;
   }
   .about-heading {
-    height: 10vh;
+    height: 20vh;
     width: 100%;
     margin-bottom: 2vh;
   }
@@ -55,7 +55,7 @@
     font-size: 25px;
   }
   .about-description {
-    height: 30vh;
+    height: 35vh;
     min-width: 20vw;
     display: flex;
     justify-content: center;
@@ -101,9 +101,13 @@
     flex-direction: row;
     max-width: 85%;
   }
+  .textarea-styling {
+    width: 100%;
+  }
+
   .inputs-login-styling {
-    width: 370px;
-    height: 8vh;
+    width: 320px;
+    height: 60px;
   }
   .login-button {
     margin-top: 0;
@@ -505,6 +509,19 @@
     overflow: hidden;
     padding-top: 10px;
   }
+  #contact-us-message {
+    width: 100%;
+  }
+  .contact-address {
+    height: 150px;
+  }
+  .contact-address p {
+    font-size: 15px;
+  }
+  .contact-page {
+    height: 110vh;
+    margin: 5vh 5vw 0 5vw;
+  }
   .contact-page h1{
     font-size: 4vh;	
   }
@@ -599,7 +616,7 @@
   }
 
 .about-who-are-we {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -619,6 +636,9 @@
   text-align: justify;
   line-height: 20px;
 
+}
+.about-page {
+  padding-top: 150px;
 }
 .about-workers-container {
   

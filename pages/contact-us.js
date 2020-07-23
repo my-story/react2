@@ -39,6 +39,8 @@ class Contact extends Component {
 
             <div className="contact-page" height={height}>
                 <h1> Contact us - warm response guaranteed!</h1>
+                <p id="contact-us-message">If you have any questions or stories you'd like to share fill in the form below. We would also love to hear your feedback and any suggestions for future guests or topics.</p>
+                <p>You can also send an email over to <b>reboundtalks@gmail.com</b></p>
                 <div className="contact-section">
                     <div className="contact-inputs">
                         <div>
@@ -53,8 +55,7 @@ class Contact extends Component {
                         </div>
                     </div>
                     <div className="contact-address">
-                    <p><b>478 Young Drive <br></br> 
-                    Brandon, FL 33511, United States</b></p>
+                    <p><b>Miami, Fl, 33133</b></p>
                     </div>
                 </div>
 
