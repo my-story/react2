@@ -6,6 +6,7 @@ import KitCard from "../../components/survivalKit/KitCard";
 import Iframe from 'react-iframe';
 import {FacebookShareButton, TwitterShareButton,  WhatsappShareButton} from "react-share";
 import EmailBox from "../../components/email/EmailBox";
+import Link from "next/link";
 
 
 class PodcastDetail extends Component {
@@ -56,14 +57,10 @@ class PodcastDetail extends Component {
                         <div className="podcast-categories">
                             <p id="categories-podcast">#Categories </p>
                             <p id="categories-podcast">#Categories </p>
-
-                        
                             </div>
-
-                
                             <h1>{podcast.title}</h1>
                         <div className="name-and-share">
-                            <div>
+                            <div className="name-share-text">
                                 <h2>{podcast.influencer.name.firstName} {podcast.influencer.name.lastName} | {podcast.time}</h2>
                             </div>
                             <div className="share-div">
@@ -111,9 +108,10 @@ class PodcastDetail extends Component {
                             <li>Edtudio del q tal <a href="google.com">Hola</a></li>
                             <li>Libro de Pennebaker</li>
                             <li>Supiste ? metele</li>
-
                         </ul>
-                    </div>
+                        </div>
+                    <div className="container-subscribe-podcast-recommendation">
+                    <div className="container-subscribe">
                     <div className="subscribe-div">
                         <h2>Subscribe</h2>
                         <p>We send our community the best tools to overcome any adversity. With the help of experts of different fields, we experiment with top of the line solutions to everyday problems.</p>
@@ -121,7 +119,15 @@ class PodcastDetail extends Component {
                     <div className="subscribe-detail-div">
                     <EmailBox></EmailBox>
                     </div>
+                    </div>
+                    <div className="podcast-recomendation">
+                        <h3><b>Popular Podcasts</b></h3>
+                        <Link href=""><p>Jonathan Haidt - Testing el name para que sea un pelo largo, aqui viene (#1)</p></Link>
+                        <Link href=""><p>Jonathan Haidt - Testing el name para que sea un pelo largo, aqui viene (#1)</p></Link>
+                    </div>
 
+                    </div>
+ 
                 </div>
             )
         }
