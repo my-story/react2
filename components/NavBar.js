@@ -54,7 +54,7 @@ class NavBar extends Component {
 			</MediaQuery>
 			<MediaQuery minDeviceWidth={700}> */
 
-			<Navbar fixed="top" bg="white" expand="lg">
+			<Navbar fixed="top" bg="white" expand="sm">
   			<Navbar.Brand href="/">
 			  <img id="logo-rebound" src={Logo} />						
 			  </Navbar.Brand>

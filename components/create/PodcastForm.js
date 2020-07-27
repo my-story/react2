@@ -4,10 +4,14 @@ import { Input , InputNumber } from 'antd';
 import PodcastServices from '../../services/PodcastServices';
 import UserContext from '../contexts/UserContext';
 
+const OPTIONS = ["Athlete", "Musician", "Tech", "Artist", "Runner", "Author"];
+
 class PodcastForm extends Component {
     state = {
         podcast : {},
-        done: false
+        done: false,
+        selectedItems: [],
+
     }
 
     static contextType = UserContext;
@@ -24,8 +28,17 @@ class PodcastForm extends Component {
         PodcastServices.create({ podcast})
           .then(() => this.setState({done:true}))
           .catch((e)=>console.log(e))  
-      };
+    };
 
+    handleChange = (selectedItems) => {
+        this.setState({
+          podcast: {
+            ...this.state.podcast,
+            expertise: selectedItems
+          }
+        })
+    };
+      
     render() {
 
         if (this.context.user.role === "Admin"){
@@ -40,6 +53,18 @@ class PodcastForm extends Component {
                         <Input name="description" placeholder="description" allowClear onChange={this.onChange}  />
                         <Input name="image" placeholder="image thumbnail" allowClear onChange={this.onChange}  />
                         <Input name="time" placeholder="How long is it" allowClear onChange={this.onChange} />
+                        <Select
+                            mode="multiple"
+                            placeholder="This is his/her Category. ADMIN can create new categories"
+                            value={data.expertise}
+                            onChange={this.handleChange}
+                            style={{ width: '100%' }}>
+                            {filteredOptions.map(item => (
+                            <Select.Option key={item} value={item}>
+                            {item}
+                            </Select.Option>
+                         ))}
+                        </Select>
                         <button onClick={this.handleSubmit}>Submit</button>
                     </div>
                 );

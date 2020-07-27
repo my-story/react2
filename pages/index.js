@@ -80,7 +80,7 @@ class InfluencerList extends Component {
           {/* <KitMap></KitMap> */}
           <div className="index-best-book-div">
               <div className="best-book-header">
-                <h1>This Week's Podcast</h1>
+                <h2>This Week's Podcast</h2>
               </div>
               <div className="best-book-info-div">
                 <div className="best-book-pictures">
@@ -108,7 +108,7 @@ class InfluencerList extends Component {
             <div className="bar-categories-div">
               {category.map((category, index) => {
                 return (
-                  <Link href={{ pathname: '/kits', query: { info: category } }}>
+                  <Link href={{ pathname: '/rebound-talks', query: { info: category } }}>
                     <span key={index} className="category-bubble" title={category}>{category}</span>
                   </Link>
                 )

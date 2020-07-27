@@ -12,7 +12,8 @@ import Link from "next/link";
 class PodcastDetail extends Component {
     state = {
         podcast: "",
-        kits: ""
+        kits: "",
+        height: 0,
     }
 
     static getInitialProps({ query: { id } }) {
@@ -38,20 +39,22 @@ class PodcastDetail extends Component {
 
     componentDidMount() {
         this.fetchPodcast();
+        this.setState({height: window.innerHeight + 'px'});
+
     };
 
     render(){
-        const {podcast} = this.state;
-        const {url} = window.location.href;
+        const {podcast, height} = this.state;
+        
 
         // console.log(url);
-        console.log(window.location.href); 
+   
 
         if (podcast === "" || this.state.kits === "") {
             return(<div></div>)
         } else {
             return(
-                <div className="podcast-detail-page">
+                <div className="podcast-detail-page" height={height}>
 
                     <div className="podcast-header-div">
                         <div className="podcast-categories">
@@ -122,8 +125,14 @@ class PodcastDetail extends Component {
                     </div>
                     <div className="podcast-recomendation">
                         <h3><b>Popular Podcasts</b></h3>
+                        <div className="box-recomendation">
                         <Link href=""><p>Jonathan Haidt - Testing el name para que sea un pelo largo, aqui viene (#1)</p></Link>
+                        <hr id="white-line"></hr>
                         <Link href=""><p>Jonathan Haidt - Testing el name para que sea un pelo largo, aqui viene (#1)</p></Link>
+                        <hr id="white-line"></hr>
+                        <Link href=""><p>Jonathan Haidt - Testing el name para que sea un pelo largo, aqui viene (#1)</p></Link>
+                        
+                        </div>
                     </div>
 
                     </div>
