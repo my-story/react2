@@ -7,12 +7,11 @@ function About(){
     return(
         <div className="about-page" height={height}>
           	<div className="about-heading">
-            	<div>
-            	<span><b>We are in the quest for improving</b></span>
-            	</div>
-            	<div id="overall-expirience"> 
-       				<span><b>people's life and</b></span><span style={{color:"#F66C4F"}}><b> overall experiences!</b></span>
-            	</div>
+            	
+            	<span><b>We are in the quest for improving </b></span>
+				<span><b>people's life and </b></span>
+				<span style={{color:"#F66C4F"}}><b> overall experiences!</b></span>
+            
          	</div>
           	<div className="about-description">
 				<div className="description-about">

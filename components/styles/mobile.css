@@ -106,8 +106,8 @@
   }
 
   .inputs-login-styling {
-    width: 320px;
-    height: 60px;
+    width: 80vw;
+    height: 40px;
   }
   .login-button {
     margin-top: 0;
@@ -359,7 +359,7 @@
   }
 
 .category-bar {
-  margin-top: 130px;
+  margin-top: 35px;
 }
   #best-book-cover {
     height: auto;

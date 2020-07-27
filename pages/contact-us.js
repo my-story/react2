@@ -34,7 +34,7 @@ class Contact extends Component {
     
     render(){
 
-        const height = this.state;
+        const {height} = this.state;
         return(
 
             <div className="contact-page" height={height}>

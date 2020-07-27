@@ -1770,16 +1770,10 @@ test cards new ones - REVIEW
 .about-heading {
   height: 19vh;
   width: 100%;
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  text-align: center;
+
+
   margin-bottom: 10vh;
-}
-.about-heading div {
-  display: flex;
-  flex-direction: flex-start;
 }
 #nav-word {
   text-align: center;
@@ -1787,9 +1781,9 @@ test cards new ones - REVIEW
   border-bottom: 0.5px solid;
 }
 .about-heading span {
-  display: inline;
+  /* display: inline; */
   font-family: Hind;
-  font-size: 6.7vh;
+  font-size: 60px;
 }
 #overall-expirience{
   display: inline;
@@ -2118,7 +2112,7 @@ margin-right: 1vw
   display: flex;
   flex-direction: column;
   /* border: 1px solid; */
-  height: 400px;
+  /* height: 400px; */
 }
 .contact-inputs {
   width: 50%;
