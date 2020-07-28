@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
 import PodcastServices from '../services/PodcastServices';
 import PodcastCard from '../components/podcast/PodcastCard';
 import CategoryBubbleOne from '../components/category/CategoryBubbleOne';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Router from 'next/router';
-import { Input , InputNumber } from 'antd';
+import { Input , Select} from 'antd';
 import PodcastServices from '../../services/PodcastServices';
 import UserContext from '../contexts/UserContext';
 
@@ -34,17 +34,21 @@ class PodcastForm extends Component {
         this.setState({
           podcast: {
             ...this.state.podcast,
-            expertise: selectedItems
+            category: selectedItems
           }
         })
     };
       
     render() {
+    
+    const {podcast, selectedItems} =  this.state;
+    const filteredOptions = OPTIONS.filter(o => !selectedItems.includes(o));
+
 
         if (this.context.user.role === "Admin"){
             if (!this.state.done) {
                 return (
-                    <div>
+                    <div className="create-podcast-page">
                         <h1>Create Podcast</h1>
                         <Input name="influencer" placeholder="influencer" allowClear onChange={this.onChange}  />
                         <Input name="title" placeholder="title" allowClear onChange={this.onChange}  />
@@ -56,7 +60,7 @@ class PodcastForm extends Component {
                         <Select
                             mode="multiple"
                             placeholder="This is his/her Category. ADMIN can create new categories"
-                            value={data.expertise}
+                            value={podcast.category}
                             onChange={this.handleChange}
                             style={{ width: '100%' }}>
                             {filteredOptions.map(item => (

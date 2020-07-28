@@ -5,7 +5,7 @@ import {Helmet} from 'react-helmet';
 import NavBar from '../components/NavBar';
 import { QtyProvider } from "../components/contexts/QtyContext"
 import { UserProvider } from "../components/contexts/UserContext";
-// import { NavBarCssProvider } from "../src/components/contexts/NavBarCssContext";
+import LogoSquare from '../public/images/ReboundIconSquare-01.png';
 import AuthServices from '../services/AuthServices';
 import '../components/styles/index.css';
 import '../components/styles/mobile.css';
@@ -16,6 +16,7 @@ import 'toastr/build/toastr.css';
 import 'antd/dist/antd.css'; 
 import 'react-dropdown/style.css'
 import Footer from '../components/Footer';
+import Loader from '../components/loader/Spinner';
 
 class MyApp extends App {
   state = {
@@ -94,7 +95,7 @@ class MyApp extends App {
     if (this.state.islogged === "") {
       return (
         <Container>
-          <div>loading...</div>
+          <Loader></Loader>
         </Container>
       );
     } else {
@@ -104,10 +105,10 @@ class MyApp extends App {
         <Helmet>
         <meta charSet="utf-8" />
         <title>Rebound | Embrace Adversity</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <link rel="canonical" href="http://reboundwithus.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content="Uncover the tools you need for overcoming your mental barriers. Follow our Sage's advices, and create new positive habits. " />
-        <link rel="shortcut icon" href="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1584463817/ReboundIconSquare-01.png" type="image/x-icon"></link>
+        <link rel="shortcut icon" href={LogoSquare} type="image/x-icon"></link>
         {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" /> */}
         </Helmet>
 

@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
-// import Slider from "react-slick";
 import Link from 'next/link';
-import Router from 'next/router';
 import {Helmet} from 'react-helmet';
-import InfluencerServices from '../services/InfluencerServices';
-import SearchBar from '../components/influencer/SearchInfluencer';
-import CategoryBubbleOne from '../components/category/CategoryBubbleOne';
-// import InfluencerItem from "../src/components/influencer/InfluencerItem";
-// import InfluencerCard from '../components/influencer/InfluencerCard';
-import KitServices from '../services/KitServices';
 import Modal from "react-responsive-modal";
-import KitMap from '../components/survivalKit/KitMap';
 
 
 class InfluencerList extends Component {
@@ -60,6 +51,8 @@ class InfluencerList extends Component {
 </script>
           </Helmet>
           <div className="expert-section">
+          
+
             <div className="expert-div">
             <div className="expert-message">
               <h1> Find the tools to overcome your adversities.</h1>

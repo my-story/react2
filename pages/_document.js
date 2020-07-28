@@ -6,7 +6,7 @@ class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <script id="stripe-js" src="https://js.stripe.com/v3/" />
+          {/* <script id="stripe-js" src="https://js.stripe.com/v3/" /> */}
         </Head>
         <body>
           <Main />

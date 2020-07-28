@@ -63,7 +63,7 @@ class InfluencerForm extends Component {
     if (this.context.user.role === "Admin") {
       if (!this.state.done) {
         return (
-          <div>
+          <div className="create-influencer-page">
             <h1>Create Influencer</h1>
             <div className="create-card">
               <Input name="firstname" placeholder="Enter Person's first name" onChange={this.onChange} prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} suffix={

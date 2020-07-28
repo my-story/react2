@@ -32,7 +32,7 @@ function About(){
 			
 					<div className="about-who-are-we">
 						<div id="who-title"><span><b>Who are we?</b></span></div>
-						<div id="who-description"><span>Few words about your team and corporate values. Lorem ipsum dolor. Few words about your team and corporate values. Lorem ipsum dolor.</span></div>
+						<div id="who-description"><span>We are two college students looking for answers to the question. "Why do some people grow after setbakcs, and others don't?</span></div>
 						<div className="about-workers-container">
 							<div className="about-workers-card">
 								<div><img id="about-picture" alt="Sages" src="https://fsmedia.imgix.net/d9/6a/5a/bb/4e8f/478d/b2b2/7cb996c00019/heres-a-recap-of-elon-musks-crazy-2015.jpeg"/></div>

@@ -1,19 +1,11 @@
 import React, {Component} from 'react';
 import Link from 'next/link';
-// import {Icon} from 'antd';	
-import PhoneNavBar from './PhoneNavBar';
 import MediaQuery from 'react-responsive';
 import {Navbar, Nav} from 'react-bootstrap';
-// import {ButtonToolbar, Dropdown,DropdownButton, SplitButton} from 'react-bootstrap';
-// import { slide as Menu } from 'react-burger-menu'
 import Logout from './auth/Logout';
-// import InfluencerServices from '../services/InfluencerServices';
-// import {QtyConsumer} from './contexts/QtyContext';
 import UserContext from './contexts/UserContext';
 import Logo from '../public/images/reboundLogo01.png';
-// import ProfileGlyph from '../public/images/user-circle-solid.svg';
 
-// import SearchBar from './influencer/SearchInfluencer';
 
 
 
