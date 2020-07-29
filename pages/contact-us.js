@@ -6,6 +6,7 @@ class Contact extends Component {
     state = {
         email: "",
         name: "",
+        message: "",
         height: 0,
     }
 
@@ -15,16 +16,8 @@ class Contact extends Component {
     }
 
     onChange = (e) => {
-        if (e.target.placeholder == "Email"){
-            let { email } = this.state
-            email = e.target.value
-            this.setState({ email })
-        } else if (e.target.placeholder == "Name"){
-            let { name } = this.state;
-            name = e.target.value
-            this.setState({ name })
-        }
-      };
+        this.setState({ [e.target.name]: e.target.value });
+    };
 
     submit = () =>{
         EmailServices.addEmail({email: this.state.email, name: this.state.name})
