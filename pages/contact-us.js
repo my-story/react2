@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import EmailServices from "../services/EmailServices"
+import MailerServices from "../services/MailerServices"
 
 
 class Contact extends Component {
     state = {
-        email: "",
-        name: "",
-        message: "",
+        data: {
+            email: "",
+            name: "",
+            message: "",
+        },
+ 
         height: 0,
+        sent: false,
     }
 
     componentWillMount() {
@@ -16,18 +20,25 @@ class Contact extends Component {
     }
 
     onChange = (e) => {
-        this.setState({ [e.target.name]: e.target.value });
+        let {data} = this.state; 
+        data[e.target.name] = e.target.value
+        this.setState({ data });
     };
 
     submit = () =>{
-        EmailServices.addEmail({email: this.state.email, name: this.state.name})
-            .then((email) => console.log(email))
-            .catch(err => console.log(err))
+
+        let {data} = this.state;
+
+       MailerServices.sendMail(data)
+        .then(() => this.setState({sent: true}))
+        .catch((error) => console.log(error))
     }
     
     render(){
 
         const {height} = this.state;
+
+
         return(
 
             <div className="contact-page" height={height}>
@@ -37,10 +48,10 @@ class Contact extends Component {
                 <div className="contact-section">
                     <div className="contact-inputs">
                         <div>
-                            <input className="inputs-login-styling" placeholder="Name" onChange={this.onChange}></input>
-                            <input className="inputs-login-styling" placeholder="Email" onChange={this.onChange}></input>
+                            <input className="inputs-login-styling" placeholder="Name" name="name" onChange={this.onChange}></input>
+                            <input className="inputs-login-styling" placeholder="Email" name="email" onChange={this.onChange}></input>
                         </div>
-                        <textarea className="textarea-styling" rows="4" placeholder="Your message..."></textarea>
+                        <textarea className="textarea-styling" rows="4" name="message" onChange={this.onChange} placeholder="Your message..."></textarea>
                         <div className="contact-button">
                         <button className="submit-button" onClick={this.submit}>Submit</button>
                         </div>

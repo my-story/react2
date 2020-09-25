@@ -1,7 +1,6 @@
 import http from './BaseServices';
 
-const sendMail = (name,email,message) =>
-    http.post('/authorize/contact',name,email,message)
+const sendMail = (data) => http.post('/authorize/contact',data)
         .then(response => response.data);
 
 export default {
