@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import MailerServices from "../services/MailerServices"
+import * as toastr from 'toastr';
+import MailerServices from "../services/MailerServices";
 
 
 class Contact extends Component {
@@ -30,7 +31,10 @@ class Contact extends Component {
         let {data} = this.state;
 
        MailerServices.sendMail(data)
-        .then(() => this.setState({sent: true}))
+        .then(() => {
+            toastr.success("Email sent!")
+            this.setState({sent: true})
+        })
         .catch((error) => console.log(error))
     }
     
@@ -38,7 +42,7 @@ class Contact extends Component {
 
         const {height} = this.state;
 
-
+        console.log(this.state);
         return(
 
             <div className="contact-page" height={height}>

@@ -31,11 +31,12 @@ class PodcastCard extends Component {
     render() {
         // const {podcast} = this.props;
 
-        console.log(this.props.podcast._id);
+        // console.log();
 
-        // if (podcast === ""){
-        //     return(<div></div>)
-        // } else {
+        if (this.props.podcast.influencer === ""){
+            return(<div></div>)
+        } else {
+
             return (
                 <Link href="/rebound-talks/[id]" as={`/rebound-talks/${this.props.podcast._id}`} key={this.props.index} prefetch>
                 <div className="podcast-outer-card">
@@ -62,6 +63,7 @@ class PodcastCard extends Component {
         
 
     }
+}
 }
 
 export default PodcastCard;

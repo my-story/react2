@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import {Helmet} from 'react-helmet';
 import Modal from "react-responsive-modal";
+import MailerServices from '../services/MailerServices';
 
 
 class InfluencerList extends Component {
@@ -11,7 +12,10 @@ class InfluencerList extends Component {
     ],
     search_expert:[],
     height: 0,
-    open: false
+    open: false,
+    data: {
+      message: ""
+    }
   }
 
 
@@ -28,17 +32,35 @@ class InfluencerList extends Component {
     this.setState({height: window.innerHeight + 'px'});
   }
 
+
+  onChange = (e) => {
+    let {data} = this.state; 
+    data[e.target.name] = e.target.value
+    this.setState({ data });
+};
+
+  sendFeedback = () => {
+    let {message} = this.state;
+
+    MailerServices.sendFeedback(message)
+    .then(() => toastr.success("Feeback sent!"))
+    .catch(() => console.log("Error sending feedback"))
+
+  }
+
   render() {
     const { open, category, kits,height } = this.state
+
+    console.log(this.state.data.message);
 
       return (
         <div className="index-page" height={height}>
           <Helmet>
           <meta charSet="utf-8" />
-          <title>Rebound Sages</title>
-          <link rel="canonical" href="http://mysite.com/example" />
+          <title>Rebound</title>
+          <link rel="canonical" href="https://reboundwithus.com" />
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/64/000000/circled-down.png" type="image/x-icon"></link>
+          <link rel="shortcut icon" href="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1584463817/ReboundIconSquare-01.png" type="image/x-icon"></link>
           <script>
     {(function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -151,39 +173,11 @@ class InfluencerList extends Component {
                   <p>We greatly appreciate you feedback!</p>
                   </div>
                   <ol className="questions-pop-up">
-                    {/* <li id="question-modal">Have you enjoyed the overall experience of the application?</li>
-                    <div id="number-bar" className="btn-group mr-2" role="group" aria-label="First group" clicked>
-                      <button type="button" id="pop-up-bttn" className="btn btn-secondary">1</button>
-                      <button type="button" id="pop-up-bttn" className="btn btn-secondary">2</button>
-                      <button type="button" id="pop-up-bttn" className="btn btn-secondary">3</button>
-                      <button type="button" id="pop-up-bttn" className="btn btn-secondary">4</button>
-                      <button type="button" id="pop-up-bttn" className="btn btn-secondary">5</button>
-                      <button type="button" id="pop-up-bttn"className="btn btn-secondary">6</button>
-                      <button type="button" id="pop-up-bttn" className="btn btn-secondary">7</button>
-                      <button type="button" id="pop-up-bttn" className="btn btn-secondary">8</button>
-                      <button type="button" id="pop-up-bttn" className="btn btn-secondary">9</button>
-                      <button type="button" id="pop-up-bttn" className="btn btn-secondary">10</button>
-                    </div>
-                    <li id="question-modal">Have you encountered any problems when using our site?</li>
-                    <div className="yes-no">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"/>
-                        <label class="form-check-label" for="exampleRadios1">
-                          Yes
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
-                        <label class="form-check-label" for="exampleRadios2">
-                          No
-                        </label>
-                      </div>
-                      </div> */}
                     <li id="question-modal">If you would like to see something improve in this page what would it be?</li>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" onChange={this.onChange} ></textarea>
                   </ol>
                   <div className="button-div">
-                  <button className="feedback-submit-button"><span className="login-font">Submit</span></button>
+                  <button className="feedback-submit-button" onClick={this.sendFeedback()}><span className="login-font">Submit</span></button>
                   </div>
                 </Modal>
               </div>
