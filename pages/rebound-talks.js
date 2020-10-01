@@ -9,7 +9,7 @@ class Podcasts extends Component {
   state = {
     podcasts: [],
     category: [
-      "All","Sports", "Music", "Tech", "Clothes"
+      "All","Psychology", "Productivity", "Wellness", "Spiritual", "Science", "X-Sports", "Sports" ,"Author" , "Coach" , "Stoicism" , "Marketing", 
     ],
     height: 0,
   };

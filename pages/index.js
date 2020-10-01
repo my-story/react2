@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {Helmet} from 'react-helmet';
 import Modal from "react-responsive-modal";
 import MailerServices from '../services/MailerServices';
-
+import Scroll from '../components/hook/Scroll';
 
 class InfluencerList extends Component {
   state = {
@@ -28,7 +28,7 @@ class InfluencerList extends Component {
   onCloseModal = () => {
     this.setState({ open: false });
   };
-  componentWillMount = () => {
+  componentDidMount = () => {
     this.setState({height: window.innerHeight + 'px'});
   }
 
@@ -52,6 +52,8 @@ class InfluencerList extends Component {
     const { open, category, kits,height } = this.state
 
     console.log(this.state.data.message);
+
+
 
       return (
         <div className="index-page" height={height}>
@@ -184,11 +186,12 @@ class InfluencerList extends Component {
             </div>
           </div>
   
-          
+          <Scroll />
         </div>
       )
     
   }
+
 }
 
 export default InfluencerList;

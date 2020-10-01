@@ -572,9 +572,9 @@ height: 3vh;
   justify-content: space-evenly;
 }
 .top-categories h2 {
-  font-size: 4vh;
+  font-size: 6vh;
   text-align: center;
-  font-family: Hind;
+  font-family: 'EB Garamond', serif;
 }
 #contact-us-message {
   width: 50%;
@@ -1972,9 +1972,15 @@ margin-bottom: 2vh;
 }
 .best-book-header h2 {
   text-align: center;
-  font-family: Hind;
+  font-family: 'EB Garamond', serif;
   font-weight: bold;
-  font-size: 4vh;
+  font-size: 55px;
+}
+.best-book-header h1 {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  font-size: 55px;
 }
 .best-book-info-div {
   width: 100%;
@@ -2330,7 +2336,9 @@ color: black;
 }
 
 .podcast-title-div h1 {
-  font-size: 5vh;
+  font-size: 8vh;
+  font-family: 'EB Garamond', serif;
+
 }
 .podcast-subscribe {
   height: 40px;
