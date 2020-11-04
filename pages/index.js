@@ -5,6 +5,7 @@ import Modal from "react-responsive-modal";
 import MailerServices from '../services/MailerServices';
 import Scroll from '../components/hook/Scroll';
 
+
 class InfluencerList extends Component {
   state = {
     category: [
@@ -39,14 +40,14 @@ class InfluencerList extends Component {
     this.setState({ data });
 };
 
-  sendFeedback = () => {
-    let {message} = this.state;
+  // sendFeedback = () => {
+  //   let {message} = this.state;
 
-    MailerServices.sendFeedback(message)
-    .then(() => toastr.success("Feeback sent!"))
-    .catch(() => console.log("Error sending feedback"))
+  //   MailerServices.sendFeedback(message)
+  //   .then(() => toastr.success("Feeback sent!"))
+  //   .catch(() => console.log("Error sending feedback"))
 
-  }
+  // }
 
   render() {
     const { open, category, kits,height } = this.state
@@ -79,11 +80,11 @@ class InfluencerList extends Component {
 
             <div className="expert-div">
             <div className="expert-message">
-              <h1> Find the tools to overcome your adversities.</h1>
+              <h1> Tools to overcome your adversities.</h1>
               <div className="expert-message-p-div">
               <p id="expert-message-description">
-              We talk to professionals that have dealt with tremendous adversity, and find out what tips, 
-              techniques and products they used especifically for overcoming that problem.
+              Talking to experts to create the perfect guides for overcoming any adversity. 
+             
               </p>
               </div>
              <Link href="rebound-talks"><button id="survival-kit-button">SEE ALL PODCASTS</button></Link> 
@@ -157,7 +158,7 @@ class InfluencerList extends Component {
               </div>
   
               </div>
-
+{/* 
               <div className="heyhey-expert">
             
             <img id="absurd-question-image" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1583447725/05.png" />
@@ -166,7 +167,7 @@ class InfluencerList extends Component {
               <h1>Hey! Your opinion really matters to us.</h1>
               <p>Feel free to let us know what you feel about the website, or any Survival Tips you would like to see.</p>
               </div>
-              {/* <button><b>Share an opinion</b></button> */}
+              <button><b>Share an opinion</b></button>
               <div> 
                 <button onClick={this.onOpenModal}><b>Share an opinion</b></button>
                 <Modal id="pop-up-css" className="modal" open={open} onClose={this.onCloseModal} center>
@@ -184,7 +185,7 @@ class InfluencerList extends Component {
                 </Modal>
               </div>
             </div>
-          </div>
+          </div> */}
   
           <Scroll />
         </div>

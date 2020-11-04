@@ -25,7 +25,7 @@ class PodcastDetail extends Component {
     fetchPodcast = () => {
         // const {id} = this.props;
         
-        PodcastServices.getOne("5f061cafe7eb8f2088f0acd6")
+        PodcastServices.getOne("5f206a5454c4be00174cc2c9")
             .then((podcast) => {
                 this.setState({podcast})
                 this.fetchKits(podcast.influencer._id)

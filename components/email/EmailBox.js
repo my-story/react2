@@ -10,20 +10,17 @@ const url = "https://gmail.us5.list-manage.com/subscribe/post?u=d023c0ec0d058304
 class EmailBox extends Component {
 
     render () {
-        console.log(this.state);
-
-
         return (
             <div className="email-box">
-            <p>Get the new episodes and exclusive tips/tools and techniques</p>
+            <p> <b>Get the new episodes and exclusive tips/tools and techniques</b></p>
 
             <MailchimpSubscribe
               url={url}
               render={({ subscribe, status, message }) => (
                 <div>
                   <SimpleForm onSubmitted={formData => subscribe(formData)} />
-                  {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-                  {status === "error" && <div style={{ color: "red" }} dangerouslySetInnerHTML={{__html: message}}/>}
+                  {status === "sending" && <div style={{ color: "blue" }}>Sending...</div>}
+                  {status === "error" && <div style={{ color: "red" }}> Already Subscribed!</div>}
                   {status === "success" && <div style={{ color: "green" }}>Subscribed !</div>}
                 </div>
               )}

@@ -3,6 +3,7 @@ import PodcastServices from '../services/PodcastServices';
 import PodcastCard from '../components/podcast/PodcastCard';
 import CategoryBubbleOne from '../components/category/CategoryBubbleOne';
 import EmailBox from '../components/email/EmailBox';
+import {window} from 'global';
 
 
 class Podcasts extends Component {

@@ -7,6 +7,8 @@ import {FacebookShareButton, TwitterShareButton,  WhatsappShareButton} from "rea
 import EmailBox from "../../components/email/EmailBox";
 import Link from "next/link";
 import {Helmet} from 'react-helmet';
+// import {window} from 'global';
+
 
 
 class PodcastDetail extends Component {
@@ -60,6 +62,7 @@ class PodcastDetail extends Component {
                     <title>Rebound Talks Podcast</title>
                     <link rel="canonical" href={`https://reboundwithus.com/rebound-talks/${podcast._id}`} />
                     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                    <meta property="og:image" content="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594235746/J.H-PODCAST.png"></meta>
                     <link rel="shortcut icon" href="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1584463817/ReboundIconSquare-01.png" type="image/x-icon"></link>
                     </Helmet>
 
@@ -117,9 +120,18 @@ class PodcastDetail extends Component {
                     <div className="show-notes-div">
                         <h2>Show notes:</h2>
                         <ul className="show-notes-ul">
-                            <li>Edtudio del q tal <a href="google.com">Hola</a></li>
-                            <li>Libro de Pennebaker</li>
-                            <li>Supiste ? metele</li>
+                            <li>COVID19 <a href="https://www.theatlantic.com/ideas/archive/2020/05/jonathan-haidt-pandemic-and-americas-polarization/612025/">Global Pandemic</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Manhattan">New York, Manhattan</a></li>
+                            <li><a href="https://www.simplypsychology.org/social-psychology.html">Social Psychology</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Evolution">Evolution</a></li>
+                            <li>Some people try to present it as <a href="https://theconversation.com/donald-trumps-chinese-virus-the-politics-of-naming-136796">the Chinese Virus</a></li>
+                            <li>The yellow fever killed <a href="https://www.history.com/this-day-in-history/yellow-fever-breaks-out-in-philadelphia#:~:text=The%20death%20toll%20from%20a,with%20fever%20and%20muscle%20pain.">70% of the people that got it</a></li>
+                            <li><a href="https://www.amazon.com/gp/product/0465028020/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0465028020&linkCode=as2&tag=rebound0a-20&linkId=bbbc23cd352da87dc0ab05962b95184a">The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom</a></li>
+                            <li>Antifragil is a word made up by <a href="https://www.amazon.com/gp/product/0812979680/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0812979680&linkCode=as2&tag=rebound0a-20&linkId=dc1999c69ff799a678740e1e895baf1c">Nassim Taleb</a></li>
+
+
+
+                            
                         </ul>
                         </div>
                     <div className="container-subscribe-podcast-recommendation">
@@ -135,11 +147,11 @@ class PodcastDetail extends Component {
                     <div className="podcast-recomendation">
                         <h3><b>Popular Podcasts</b></h3>
                         <div className="box-recomendation">
-                        <Link href="www.reboundwithus.com/rebound-talks/5f73b7e33455541f38e4cdcc"><p><b>Donald Robertson</b> - How Stoic Philosophy Can Change Your Life (#22)</p></Link>
+                        <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f73b7e33455541f38e4cdcc`}><p><b>Donald Robertson</b> - How Stoic Philosophy Can Change Your Life (#22)</p></Link>
                         <hr id="white-line"></hr>
-                        <Link href="www.reboundwithus.com/rebound-talks/5f73b52c3455541f38e4cdc6"><p><b>Robert Greene </b> - Irrationality, Death, and Fate (#21)</p></Link>
+                        <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f73b52c3455541f38e4cdc6`}><p><b>Robert Greene </b> - Irrationality, Death, and Fate (#21)</p></Link>
                         <hr id="white-line"></hr>
-                        <Link href="www.reboundwithus.com/rebound-talks/5f061cafe7eb8f2088f0acd6"><p><b>Nir Eyal</b> - How to Become Indistractable, Take Control of Your Focus, and Re-shape Your Life (#2)</p></Link>
+                        <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f061cafe7eb8f2088f0acd6`}><p><b>Nir Eyal</b> - How to Become Indistractable, Take Control of Your Focus, and Re-shape Your Life (#2)</p></Link>
                         
                         </div>
                     </div>

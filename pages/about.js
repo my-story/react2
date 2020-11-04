@@ -15,7 +15,7 @@ function About(){
          	</div>
           	<div className="about-description">
 				<div className="description-about">
-                <p>We do this by handpicking specific experts and asking them for a product, place, experience, etc., which has helped them personally be successful in their careers and achieve their goals. Luckily, they have decided to share their insights with you so that you can unlock your true potential</p>
+                <p>We do this by speaking with all kinds of world class performers ranging from award winning psychologists, to pro surfers, to best selling authors. We speak about adversity, and what tips, tools, and techniques they have gathered along their joruney. Luckily, they have decided to share their insights with you so that you can unlock your true potential. The journey wont be easy. But going step by step, we will all expirience this human expirieince to its full potential.</p>
 				</div>
 			</div>
         	{/* <div className="video-section">
@@ -31,7 +31,7 @@ function About(){
         	</div> */}
 			
 					<div className="about-who-are-we">
-						<div id="who-title"><span><b>Who are we?</b></span></div>
+						<div id="who-title"><span id="who-are-we"><b>Who are we?</b></span></div>
 						<div id="who-description"><span>We are two college students looking for answers to the question. "Why do some people grow after setbakcs, and others don't?</span></div>
 						<div className="about-workers-container">
 							<div className="about-workers-card">

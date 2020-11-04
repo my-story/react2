@@ -9,7 +9,7 @@ import Link from "next/link";
 import {Helmet} from 'react-helmet';
 // import {window} from 'global';
 
-
+//
 
 class PodcastDetail extends Component {
     state = {
@@ -25,7 +25,7 @@ class PodcastDetail extends Component {
     fetchPodcast = () => {
         // const {id} = this.props;
         
-        PodcastServices.getOne("5f061cafe7eb8f2088f0acd6")
+        PodcastServices.getOne("5f18887c5a3a9e0017b5d92b")
             .then((podcast) => {
                 this.setState({podcast})
                 this.fetchKits(podcast.influencer._id)

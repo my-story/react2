@@ -25,7 +25,7 @@ class PodcastDetail extends Component {
     fetchPodcast = () => {
         // const {id} = this.props;
         
-        PodcastServices.getOne("5f061cafe7eb8f2088f0acd6")
+        PodcastServices.getOne("5f73b7e33455541f38e4cdcc")
             .then((podcast) => {
                 this.setState({podcast})
                 this.fetchKits(podcast.influencer._id)
@@ -141,7 +141,7 @@ class PodcastDetail extends Component {
                         <hr id="white-line"></hr>
                         <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f73b52c3455541f38e4cdc6`}><p><b>Robert Greene </b> - Irrationality, Death, and Fate (#21)</p></Link>
                         <hr id="white-line"></hr>
-                        <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f061cafe7eb8f2088f0acd6`}><p><b>Nir Eyal</b> - How to Become Indistractable, Take Control of Your Focus, and Re-shape Your Life (#2)</p></Link>
+                        <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f061cafe7eb8f2088f0acd6`}><p><b>Nir Eyal</b> - How to Become Indistractable, Take Control of Your Focus, and Re-shape Your Life (#2)</p></Link> 
                         </div>
                     </div>
 

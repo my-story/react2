@@ -18,6 +18,7 @@ import 'react-dropdown/style.css'
 import Footer from '../components/Footer';
 import Loader from '../components/loader/Spinner';
 
+
 class MyApp extends App {
   state = {
     loggedInUser: "",
@@ -36,16 +37,16 @@ class MyApp extends App {
     });
   }
 
-  // checkLogged = () => {
-  //   AuthServices.loggedin()
-  //     .then(res => {
-  //       this.setState({ islogged: true, loggedInUser: res.data });
-  //     })
-  //     .catch(e => {
-  //       this.setState({ islogged: false });
-  //       console.log(e);
-  //     });
-  // };
+  checkLogged = () => {
+    AuthServices.loggedin()
+      .then(res => {
+        this.setState({ islogged: true, loggedInUser: res.data });
+      })
+      .catch(e => {
+        this.setState({ islogged: false });
+        console.log(e);
+      });
+  };
 
   bye = () => {
     if (this.state.islogged) {
@@ -59,7 +60,7 @@ class MyApp extends App {
   }
 
   componentDidMount = () => {
-    // this.checkLogged();
+    this.checkLogged();
   }
 
   getQty() {
@@ -92,13 +93,13 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
 
-    // if (this.state.islogged === "") {
-    //   return (
-    //     <Container>
-    //       <Loader></Loader>
-    //     </Container>
-    //   );
-    // } else {
+    if (this.state.islogged === "") {
+      return (
+        <Container>
+          <Loader></Loader>
+        </Container>
+      );
+    } else {
       return (
         <Container>
           {/* TITLE, DESCRIPTION,Logo of page. */}
@@ -136,6 +137,6 @@ class MyApp extends App {
       );
     }
   }
-// }
+}
 
 export default MyApp;

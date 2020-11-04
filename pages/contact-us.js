@@ -3,6 +3,17 @@ import * as toastr from 'toastr';
 import MailerServices from "../services/MailerServices";
 
 
+const initialState = {
+    data: {
+        email: "",
+        name: "",
+        message: "",
+    },
+
+    // height: window.innerHeight + 'px',
+    sent: false,
+};
+
 class Contact extends Component {
     state = {
         data: {
@@ -31,9 +42,9 @@ class Contact extends Component {
         let {data} = this.state;
 
        MailerServices.sendMail(data)
-        .then(() => {
-            toastr.success("Email sent!")
-            this.setState({sent: true})
+        .then((res) => {
+            toastr.success("Message Sent")
+            this.setState(initialState)
         })
         .catch((error) => console.log(error))
     }
@@ -48,7 +59,7 @@ class Contact extends Component {
             <div className="contact-page" height={height}>
                 <h1> Contact us - warm response guaranteed!</h1>
                 <p id="contact-us-message">If you have any questions or stories you'd like to share fill in the form below. We would also love to hear your feedback and any suggestions for future guests or topics.</p>
-                <p>You can also send an email over to <b>reboundtalks@gmail.com</b></p>
+                <p>You can also send an email over to <b>contact@reboundwithus.com</b></p>
                 <div className="contact-section">
                     <div className="contact-inputs">
                         <div>

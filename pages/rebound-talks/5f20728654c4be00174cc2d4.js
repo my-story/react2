@@ -9,7 +9,7 @@ import Link from "next/link";
 import {Helmet} from 'react-helmet';
 // import {window} from 'global';
 
-
+//
 
 class PodcastDetail extends Component {
     state = {
@@ -25,7 +25,7 @@ class PodcastDetail extends Component {
     fetchPodcast = () => {
         // const {id} = this.props;
         
-        PodcastServices.getOne("5f061cafe7eb8f2088f0acd6")
+        PodcastServices.getOne("5f20728654c4be00174cc2d4")
             .then((podcast) => {
                 this.setState({podcast})
                 this.fetchKits(podcast.influencer._id)
@@ -62,14 +62,17 @@ class PodcastDetail extends Component {
                     <title>Rebound Talks Podcast</title>
                     <link rel="canonical" href={`https://reboundwithus.com/rebound-talks/${podcast._id}`} />
                     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                    <meta property="og:image" content="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1595956570/William_b_web-promo.png"></meta>
                     <link rel="shortcut icon" href="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1584463817/ReboundIconSquare-01.png" type="image/x-icon"></link>
                     </Helmet>
 
                     <div className="podcast-header-div">
                         <div className="podcast-categories">
+                            <p id="categories-podcast">#Stoicism </p>
                             <p id="categories-podcast">#Adversity </p>
                             <p id="categories-podcast">#Psychology </p>
-                            <p id="categories-podcast">#NYU </p>
+                            <p id="categories-podcast">#Philosophy </p>
+
 
                             </div>
                             <h1>{podcast.title}</h1>
@@ -85,14 +88,13 @@ class PodcastDetail extends Component {
                             </div>
                         </div>
                     </div>
-                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/14252078/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/"
+                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/15311870/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/"
                             width="80%"
                             height="95px"
                             className="podcast-embed"
                             display="initial"
                             position="relative"/>
                     <div className="subscribe-podcast">
-                    
                         <p><b>Subscribe on</b></p>
                         <a href="https://podcasts.apple.com/us/podcast/the-rebound-talks/id1511330975" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145439/itunes-logo-podcast.png" alt="itunes-logo" /></a>
                         <a href="https://open.spotify.com/show/25dIWTvKIYcbPdssLu0e8M" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145464/spotify-logo-black-png-4.png" alt="spotify-logo" /></a>
@@ -119,9 +121,16 @@ class PodcastDetail extends Component {
                     <div className="show-notes-div">
                         <h2>Show notes:</h2>
                         <ul className="show-notes-ul">
-                            <li>Edtudio del q tal <a href="google.com">Hola</a></li>
-                            <li>Libro de Pennebaker</li>
-                            <li>Supiste ? metele</li>
+                            <li><a href="https://www.amazon.com/gp/product/0393652491/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393652491&linkCode=as2&tag=rebound0a-20&linkId=b885a83523cd6c1986adcf2495ef31e2">The Stoic Challenge: A Philosopher's Guide to Becoming Tougher, Calmer, and More Resilient </a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Psychology">Psychology </a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/American_football">American Football </a></li>
+                            <li><a href="https://literary-devices.com/">Literary Devices</a></li>
+                            <li>Interview With Ryan Holiday <a href="https://dailystoic.com/william_irvine/">on Stoic Gods</a></li>
+                            <li><a href="https://intellectinterviews.com/2020/06/williambirvine-stoicism/">Target vs. Victimize</a></li>
+                            <li>William on <a href="https://howtobeastoic.wordpress.com/2015/03/26/irvine-on-negative-visualization/">Negative Visualization</a></li>
+                            <li>"We suffer more in imagination than in reality" - Seneca <a href="https://www.instagram.com/p/CAyPx7kn-Qq/">Click here</a></li>
+                            
+
                         </ul>
                         </div>
                     <div className="container-subscribe-podcast-recommendation">
@@ -141,7 +150,7 @@ class PodcastDetail extends Component {
                         <hr id="white-line"></hr>
                         <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f73b52c3455541f38e4cdc6`}><p><b>Robert Greene </b> - Irrationality, Death, and Fate (#21)</p></Link>
                         <hr id="white-line"></hr>
-                        <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f061cafe7eb8f2088f0acd6`}><p><b>Nir Eyal</b> - How to Become Indistractable, Take Control of Your Focus, and Re-shape Your Life (#2)</p></Link>
+                        <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f061cafe7eb8f2088f0acd6`}><p><b>Nir Eyal</b> - How to Become Indistractable, Take Control of Your Focus, and Re-shape Your Life (#2)</p></Link> 
                         </div>
                     </div>
 

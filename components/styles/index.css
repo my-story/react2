@@ -561,7 +561,9 @@ height: 3vh;
   text-decoration: none;
   border: none;
 }
-
+#who-are-we {
+  font-family: 'EB Garamond', serif;
+}
 /* Categories Section */
 .top-categories {
   /* margin-top: 5vh; */
@@ -572,7 +574,7 @@ height: 3vh;
   justify-content: space-evenly;
 }
 .top-categories h2 {
-  font-size: 6vh;
+  font-size: 7vh;
   text-align: center;
   font-family: 'EB Garamond', serif;
 }
@@ -630,6 +632,9 @@ height: 3vh;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.category-bubble:hover {
+  cursor: pointer;
 }
  #profile-glyph {
    height: 50px;
@@ -970,10 +975,13 @@ test cards new ones - REVIEW
 }
 .about-heading {
   /* height: 19vh; */
-  width: 100%;
+  width: 90%;
   text-align: center;
   margin-top: 15vh;
   margin-bottom: 10vh;
+  margin-left: 5vw;
+  /* margin-right: 10vw; */
+
 }
 #nav-word {
   text-align: center;
@@ -1296,8 +1304,11 @@ margin-right: 1vw
   margin-top: 200px 2.5vw 0 2.5vw;  
 }
 .contact-page {
-  height: 75vh;
+  height: 90vh;
   margin: 5vh 5vw 0 5vw;
+}
+.instagram {
+  height: 3vh;
 }
 .contact-page h1{
   font-family: Hind;	
@@ -1974,13 +1985,16 @@ margin-bottom: 2vh;
   text-align: center;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
-  font-size: 55px;
+  /* font-size: 55px; */
+  font-size: 7vh;
+
 }
 .best-book-header h1 {
   text-align: center;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 7vh;
+
 }
 .best-book-info-div {
   width: 100%;
@@ -2257,7 +2271,7 @@ color: black;
   width: 80%;
 }
 .podcast-detail-description-div h2 {
-  font-size: 4vh;
+  font-size: 3.5vh;
 }
 .podcast-detail-kit-div {
   /* margin: 0 12vw 0 12vw; */
@@ -2416,7 +2430,7 @@ margin-bottom: 55px;
   width: 80%;
 }
 .show-notes-div h2 {
-  font-size: 4vh;
+  font-size: 3.5vh;
 }
 .subscribe-box {
   margin-bottom: 30px;
@@ -2456,7 +2470,7 @@ margin-bottom: 55px;
   align-items: baseline;
 }
 .subscribe-div h2 {
-  font-size: 4vh;
+  font-size: 3.5vh;
 }
 .subscribe-div p {
   width: 100%;
