@@ -80,7 +80,7 @@ class InfluencerList extends Component {
 
             <div className="expert-div">
             <div className="expert-message">
-              <h1> Tools to overcome your adversities.</h1>
+              <h1> Learn to embrace your adversities.</h1>
               <div className="expert-message-p-div">
               <p id="expert-message-description">
               Talking to experts to create the perfect guides for overcoming any adversity. 
@@ -103,13 +103,13 @@ class InfluencerList extends Component {
               <div className="best-book-info-div">
                 <div className="best-book-pictures">
                   {/* <img id="best-book-cover" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1590513128/Ep._1_4.png" alt="Book Cover" /> */}
-                  <img id="podcast-guest" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/James_Arthur_Ray_2017.jpg" alt="Author Picture" />
+                  <img id="podcast-guest" src="https://www.gannett-cdn.com/-mm-/b5e83c6966dcbcdf15af31e199b90904c4b9f35a/c=0-2-765-1022/local/-/media/2018/05/04/USATODAY/USATODAY/636610323359764248-XXX-JUNOT-DIAZ-BOOKS-771.jpg?quality=50&width=640" alt="Author Picture" />
                 </div>
                 <div className="best-book-title-div">
-                  <h2>The Alchemist, 25th Anniversary: A Fable About Following Your Dream </h2>
-                  <p id="best-author-p">Paulo Coelho | #86 in Books on Amazon</p>
+                  <h2>Pulitzer Prize Winner Junot Díaz on Unprocessed Trauma, Purpose, and Art</h2>
+                  <p id="best-author-p">Junot Diaz</p>
                   <p id="best-description-p">
-                  Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Along the way he meets a Gypsy woman, a man who calls himself king, and an alchemist, all of whom point Santiago in the direction of his quest. No one knows what the treasure is, or if Santiago will be able to surmount the obstacles in his path. But what starts out as a journey to find worldly goods turns into a discovery of the treasure found within. Lush, evocative, and deeply humane, the story of Santiago.
+                  Junot Díaz is a Dominican-American writer, creative writing professor at the Massachusetts Institute of Technology (MIT), and fiction editor at Boston Review. Central to Díaz's work is the immigrant experience, particularly the Latino immigrant experience. Diaz received the 2008 Pulitzer Prize for Fiction for his novel The Brief Wondrous Life of Oscar Wao, and received a MacArthur Fellowship "Genius Grant" in 2012.
                   </p>
                   <button>Listen Now</button>
                 </div>
@@ -144,7 +144,7 @@ class InfluencerList extends Component {
               </div>
               <div className="best-book-info-div">
                 <div className="best-book-pictures">
-                  <img id="best-book-cover" src="https://miro.medium.com/max/3000/1*r6rpoanJHbvwZpSW7mZjzg.jpeg" alt="Book Cover" />
+                  <img id="best-book-cover" src="https://i.ytimg.com/vi/1oxyBAbL_0k/maxresdefault.jpg" alt="Book Cover" />
                   {/* <img id="best-book-author" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Robert_Greene_B%26W.jpg" alt="Author Picture" /> */}
                 </div>
                 <div className="best-book-title-div">
