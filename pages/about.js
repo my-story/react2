@@ -6,16 +6,16 @@ function About(){
 
     return(
         <div className="about-page" height={height}>
+			<div className="about-heading-div">
           	<div className="about-heading">
-            	
             	<span><b>We are in the quest for improving </b></span>
 				<span><b>people's life and </b></span>
 				<span style={{color:"#F66C4F"}}><b> overall experiences!</b></span>
-            
          	</div>
+			 </div>
           	<div className="about-description">
 				<div className="description-about">
-                <p>We do this by speaking with all kinds of world class performers ranging from award winning psychologists, to pro surfers, to best selling authors. We speak about adversity, and what tips, tools, and techniques they have gathered along their joruney. Luckily, they have decided to share their insights with you so that you can unlock your true potential. The journey wont be easy. But going step by step, we will all expirience this human expirieince to its full potential.</p>
+                <p>We do this by speaking with all kinds of world class performers ranging from award winning psychologists, to pro surfers, to best selling authors. We touch on uncomfortable subjects like human adversities. And we figure out what tips, tools, and techniques they have gathered along their joruney to overcome their own mental barriers. Luckily, they have decided to share their insights with you so that you can unlock your true potential. The journey starts now! It will take effort and sacrifice, but hey, what easy comes easy goes.</p>
 				</div>
 			</div>
         	{/* <div className="video-section">
@@ -32,7 +32,9 @@ function About(){
 			
 					<div className="about-who-are-we">
 						<div id="who-title"><span id="who-are-we"><b>Who are we?</b></span></div>
-						<div id="who-description"><span>We are two college students looking for answers to the question. "Why do some people grow after setbakcs, and others don't?</span></div>
+						<div id="who-description">
+							<p>We are two college students looking for answers to the question. "Why do some people grow after setbakcs, and others don't?</p>
+							</div>
 						<div className="about-workers-container">
 							<div className="about-workers-card">
 								<div><img id="about-picture" alt="Sages" src="https://fsmedia.imgix.net/d9/6a/5a/bb/4e8f/478d/b2b2/7cb996c00019/heres-a-recap-of-elon-musks-crazy-2015.jpeg"/></div>

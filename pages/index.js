@@ -9,7 +9,7 @@ import Scroll from '../components/hook/Scroll';
 class InfluencerList extends Component {
   state = {
     category: [
-      "All", "Addiction","Cognitive Skills", "Spirituality" , "Running" , "Neuroscience" , "Psychology" , "Fear"
+      "All","Psychology", "Productivity", "Wellness", "Spiritual", "Science", "X-Sports", "Sports" ,"Author" , "Coach" , "Stoicism" , "Marketing", 
     ],
     search_expert:[],
     height: 0,
@@ -138,13 +138,13 @@ class InfluencerList extends Component {
           </div>
 
   
-              <div className="index-best-book-div">
+              <div className="index-best-book-div-book">
               <div className="best-book-header">
                 <h1>The Best Book This Week</h1>
               </div>
-              <div className="best-book-info-div">
+              <div className="best-book-info-div-book">
                 <div className="best-book-pictures">
-                  <img id="best-book-cover" src="https://i.ytimg.com/vi/1oxyBAbL_0k/maxresdefault.jpg" alt="Book Cover" />
+                  <img id="best-book-cover" src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="Book Cover" />
                   {/* <img id="best-book-author" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Robert_Greene_B%26W.jpg" alt="Author Picture" /> */}
                 </div>
                 <div className="best-book-title-div">

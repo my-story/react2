@@ -978,8 +978,16 @@ test cards new ones - REVIEW
   width: 90%;
   text-align: center;
   margin-top: 15vh;
-  margin-bottom: 10vh;
-  margin-left: 5vw;
+
+  /* margin-right: 10vw; */
+
+}
+.about-heading-div {
+  /* height: 19vh; */
+  width: 100%;
+display: flex;
+justify-content: center;
+
   /* margin-right: 10vw; */
 
 }
@@ -1006,7 +1014,6 @@ test cards new ones - REVIEW
 .description-about {
   font-family: Arial, Helvetica, san-serif;
   width: 80%;
-
   text-align: justify;
 }
 .about-who-are-we {
@@ -1025,7 +1032,7 @@ test cards new ones - REVIEW
   margin-left: 12vw;
   line-height: 30px;
   font-family: Arial, Helvetica, san-serif;
-;
+  text-align: justify;
 }
 
 .about-workers-container {
@@ -1622,6 +1629,7 @@ height: 50px;
 width: auto;
 }
 .logo-copywrite {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -1975,8 +1983,16 @@ margin-bottom: 2vh;
   width: 100%;
   /* margin-top: 8vh; */
   margin: 10vh 0 10vh 0;
-
-  
+}
+.index-best-book-div-book {
+  min-height: 60vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 8vh; */
+  margin: 10vh 0 10vh 0;
 }
 .best-book-header {
   text-align: center;
@@ -2002,6 +2018,12 @@ margin-bottom: 2vh;
   flex-direction: row;
   margin-top: 2vh;
 }
+.best-book-info-div-book {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+}
 #see-all-podcast{
   text-decoration: underline;
   margin-top: 100px;
@@ -2013,11 +2035,11 @@ margin-bottom: 2vh;
   flex-direction: row; */
 }
 #best-book-cover {
-  height: auto;
-  border-radius: 25px;
-  width: 80%;
-  /* padding-right: 60px;
-  padding-left: 30px; */
+  height: 300px;
+  width: auto;
+  /* border-radius: 25px; */
+  /* padding-right: 60px; */
+  /* padding-left: 90px; */
   background-color: #F7F7F7;
 }
 #best-book-author {
