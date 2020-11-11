@@ -103,8 +103,7 @@ class PodcastDetail extends Component {
                 
                     <div className="podcast-detail-description-div">
                         <p>{podcast.description}</p>
-                        <h2>Who is {podcast.influencer.name.firstName} {podcast.influencer.name.lastName} ?</h2>
-                            <p>{podcast.influencer.description}</p>
+
                     </div>
                     {/* <div className="podcast-detail-kit-div">
                         <p id="survival-kit-word">SURVIVAL KITS</p>

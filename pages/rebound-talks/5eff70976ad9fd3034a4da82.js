@@ -103,9 +103,9 @@ class PodcastDetail extends Component {
 
                 
                     <div className="podcast-detail-description-div">
+                    {/* <h2>{podcast.influencer.name.firstName} {podcast.influencer.name.lastName} ?</h2> */}
+
                         <p>{podcast.description}</p>
-                        <h2>Who is {podcast.influencer.name.firstName} {podcast.influencer.name.lastName} ?</h2>
-                            <p>{podcast.influencer.description}</p>
                     </div>
                     {/* <div className="podcast-detail-kit-div">
                         <p id="survival-kit-word">SURVIVAL KITS</p>
@@ -128,10 +128,19 @@ class PodcastDetail extends Component {
                             <li>The yellow fever killed <a href="https://www.history.com/this-day-in-history/yellow-fever-breaks-out-in-philadelphia#:~:text=The%20death%20toll%20from%20a,with%20fever%20and%20muscle%20pain.">70% of the people that got it</a></li>
                             <li><a href="https://www.amazon.com/gp/product/0465028020/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0465028020&linkCode=as2&tag=rebound0a-20&linkId=bbbc23cd352da87dc0ab05962b95184a">The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom</a></li>
                             <li>Antifragil is a word made up by <a href="https://www.amazon.com/gp/product/0812979680/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0812979680&linkCode=as2&tag=rebound0a-20&linkId=dc1999c69ff799a678740e1e895baf1c">Nassim Taleb</a></li>
+                            https://www.adamgrant.net/about/biography/
+                            <li>Wharton <a href="https://www.adamgrant.net/about/biography/">Adam Grant</a></li>
+                            <li>Daniel Kahneman <a href="https://positivepsychology.com/what-is-peak-end-theory/">Positive Psychology</a></li>
+                            <li>Psychedelics <a href="https://tim.blog/category/psychedelics/">Tim Ferris Blog</a></li>
+                            How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence
+                            <li>Michael Polland <a href="https://www.amazon.com/gp/product/0735224153/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0735224153&linkCode=as2&tag=rebound0a-20&linkId=3539b76d0f599bea032ff47949233a00">How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence</a></li>
+                            <li>Abraham Maslow <a href="https://www.verywellmind.com/what-are-peak-experiences-2795268">Peak Experiences</a></li>
 
 
 
-                            
+
+
+
                         </ul>
                         </div>
                     <div className="container-subscribe-podcast-recommendation">

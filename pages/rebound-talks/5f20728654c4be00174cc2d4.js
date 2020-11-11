@@ -105,8 +105,7 @@ class PodcastDetail extends Component {
                 
                     <div className="podcast-detail-description-div">
                         <p>{podcast.description}</p>
-                        <h2>Who is {podcast.influencer.name.firstName} {podcast.influencer.name.lastName} ?</h2>
-                            <p>{podcast.influencer.description}</p>
+                  
                     </div>
                     {/* <div className="podcast-detail-kit-div">
                         <p id="survival-kit-word">SURVIVAL KITS</p>
@@ -128,7 +127,7 @@ class PodcastDetail extends Component {
                             <li>Interview With Ryan Holiday <a href="https://dailystoic.com/william_irvine/">on Stoic Gods</a></li>
                             <li><a href="https://intellectinterviews.com/2020/06/williambirvine-stoicism/">Target vs. Victimize</a></li>
                             <li>William on <a href="https://howtobeastoic.wordpress.com/2015/03/26/irvine-on-negative-visualization/">Negative Visualization</a></li>
-                            <li>"We suffer more in imagination than in reality" - Seneca <a href="https://www.instagram.com/p/CAyPx7kn-Qq/">Click here</a></li>
+                            <li>"We suffer more in imagination than in reality" - <a href="https://www.instagram.com/p/CAyPx7kn-Qq/">Seneca</a></li>
                             
 
                         </ul>

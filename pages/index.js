@@ -80,11 +80,10 @@ class InfluencerList extends Component {
 
             <div className="expert-div">
             <div className="expert-message">
-              <h1> Learn to embrace your adversities.</h1>
+              <h1>Embrace your adversities.</h1>
               <div className="expert-message-p-div">
               <p id="expert-message-description">
-              Talking to experts to create the perfect guides for overcoming any adversity. 
-             
+              Rebound and Experts are creating 21-day guides for overcoming any adversity. 
               </p>
               </div>
              <Link href="rebound-talks"><button id="survival-kit-button">SEE ALL PODCASTS</button></Link> 

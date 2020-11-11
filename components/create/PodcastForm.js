@@ -4,7 +4,8 @@ import { Input , Select} from 'antd';
 import PodcastServices from '../../services/PodcastServices';
 import UserContext from '../contexts/UserContext';
 
-const OPTIONS = ["Athlete", "Musician", "Tech", "Artist", "Runner", "Author"];
+const OPTIONS = [
+    "All","Psychology", "Productivity", "Wellness", "Spiritual", "Science", "X-Sports", "Sports" ,"Author" , "Coach" , "Stoicism" , "Marketing"];
 
 class PodcastForm extends Component {
     state = {

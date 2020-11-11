@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function About(){
     const height = window.innerHeight + 'px';
 
@@ -37,18 +36,18 @@ function About(){
 							</div>
 						<div className="about-workers-container">
 							<div className="about-workers-card">
-								<div><img id="about-picture" alt="Sages" src="https://fsmedia.imgix.net/d9/6a/5a/bb/4e8f/478d/b2b2/7cb996c00019/heres-a-recap-of-elon-musks-crazy-2015.jpeg"/></div>
+								<div><img id="about-picture" alt="Sebastian Grossmann" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1605125679/Untitled_design_1.png"/></div>
 								<div className="about-worker-name">
 									<h1>Sebastian Grossmann</h1>
-									<p>Co-founder</p>
+									<p>Founder</p>
 								</div>
 							</div>
 
 							<div className="about-workers-card">
-								<div><img id="about-picture" alt="Sages" src="https://fsmedia.imgix.net/d9/6a/5a/bb/4e8f/478d/b2b2/7cb996c00019/heres-a-recap-of-elon-musks-crazy-2015.jpeg"/></div>
+								<div><img id="about-picture" alt="Antonio Colmenares" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1605125681/Untitled_design_2.png"/></div>
 								<div className="about-worker-name">
 									<h1>Antonio Colmenares</h1>
-									<p>Co-founder</p>
+									<p>Founder</p>
 								</div>
 							</div>
 						</div>
