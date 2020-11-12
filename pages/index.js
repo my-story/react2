@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import {Helmet} from 'react-helmet';
-import Modal from "react-responsive-modal";
-import MailerServices from '../services/MailerServices';
+// import Modal from "react-responsive-modal";
+// import PodcastServices from '../services/PodcastServices';
 import Scroll from '../components/hook/Scroll';
 
 
@@ -16,7 +16,8 @@ class InfluencerList extends Component {
     open: false,
     data: {
       message: ""
-    }
+    },
+    podcast: {},
   }
 
 
@@ -31,8 +32,15 @@ class InfluencerList extends Component {
   };
   componentDidMount = () => {
     this.setState({height: window.innerHeight + 'px'});
+    // this.podcastOfWeek();
   }
 
+  // podcastOfWeek = () => {
+ 
+  //   PodcastServices.getLast()
+  //   .then((pod) => this.setState({podcast: pod[0]}))
+  //   .catch((error) => console.log(error))
+  // }
 
   onChange = (e) => {
     let {data} = this.state; 
@@ -50,12 +58,10 @@ class InfluencerList extends Component {
   // }
 
   render() {
-    const { open, category, kits,height } = this.state
-
-    console.log(this.state.data.message);
+    const { open, category, kits,height, podcast } = this.state
 
 
-
+    console.log(category)
       return (
         <div className="index-page" height={height}>
           <Helmet>
@@ -83,7 +89,7 @@ class InfluencerList extends Component {
               <h1>Embrace your adversities.</h1>
               <div className="expert-message-p-div">
               <p id="expert-message-description">
-              Rebound and Experts are creating 21-day guides for overcoming any adversity. 
+              Rebound collaborates with experts to create 21-day guides for overcoming any adversity
               </p>
               </div>
              <Link href="rebound-talks"><button id="survival-kit-button">SEE ALL PODCASTS</button></Link> 
@@ -102,15 +108,17 @@ class InfluencerList extends Component {
               <div className="best-book-info-div">
                 <div className="best-book-pictures">
                   {/* <img id="best-book-cover" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1590513128/Ep._1_4.png" alt="Book Cover" /> */}
-                  <img id="podcast-guest" src="https://www.gannett-cdn.com/-mm-/b5e83c6966dcbcdf15af31e199b90904c4b9f35a/c=0-2-765-1022/local/-/media/2018/05/04/USATODAY/USATODAY/636610323359764248-XXX-JUNOT-DIAZ-BOOKS-771.jpg?quality=50&width=640" alt="Author Picture" />
+                  <img id="podcast-guest" src="https://assets.bonappetit.com/photos/5bd7781b46c24a0449673f55/master/pass/marion-nestle.jpg" alt="Author Picture" />
                 </div>
+
                 <div className="best-book-title-div">
-                  <h2>Pulitzer Prize Winner Junot Díaz on Unprocessed Trauma, Purpose, and Art</h2>
-                  <p id="best-author-p">Junot Diaz</p>
+                  <h2>The Inner Workings of Nutrition and The Food System with Marion Nestle</h2>
+                  <p id="best-author-p">Marion Nestle</p>
                   <p id="best-description-p">
-                  Junot Díaz is a Dominican-American writer, creative writing professor at the Massachusetts Institute of Technology (MIT), and fiction editor at Boston Review. Central to Díaz's work is the immigrant experience, particularly the Latino immigrant experience. Diaz received the 2008 Pulitzer Prize for Fiction for his novel The Brief Wondrous Life of Oscar Wao, and received a MacArthur Fellowship "Genius Grant" in 2012.
+                  Marion Nestle is the Paulette Goddard professor of nutrition, food studies, and public health at New York University. She is also a sociology professor at NYU and a visiting professor of nutritional sciences at Cornell University. She is also the author of six prize-winning books that focus on what we should eat and the politics behind the food system. 
                   </p>
-                  <button>Listen Now</button>
+                <Link href="rebound-talks"><button id="survival-kit-button1">Listen Now!</button></Link> 
+                 
                 </div>
               </div>
               {/* <span id="see-all-podcast"><a href="/podcasts">See All Podcast</a></span> */}
@@ -189,7 +197,7 @@ class InfluencerList extends Component {
           <Scroll />
         </div>
       )
-    
+     
   }
 
 }

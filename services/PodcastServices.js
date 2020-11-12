@@ -15,10 +15,14 @@ const edit = (data, id) => http.post(`/podcast/${id}`, data)
 const searchPodcast = (search) => http.get(`/podcast/filter?search=${search}`)
   .then((res) => res.data);
 
+const getLast = () => http.get('/podcast/last')
+  .then((res) => res.data);
+
 export default {
   getAll,
   getOne,
   create,
   edit,
-  searchPodcast
+  searchPodcast,
+  getLast
 }
