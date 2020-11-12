@@ -766,10 +766,11 @@ height: 3vh;
 .footer-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   /* position: absolute; */
   /* bottom: 0; */
   left: 0;
-  height: 14vh;
+  height: 7vh;
   width: 100%;
   background-color: #f3f2eb;
   font-family: "Hind", sans-serif;
@@ -2272,6 +2273,7 @@ color: black;
 .podcast-categories {
   display: flex;
   flex-direction: row;
+  max-width: 100%;
 }
 .podcast-header-div {
   margin-top: 2vh;

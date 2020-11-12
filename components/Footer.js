@@ -22,7 +22,7 @@ class Footer extends Component{
 					</div>
 				</div>
 				<div className="important-info">
-				<Link href="/terms_conditions"><p>Terms & Conditions</p></Link>	
+				{/* <Link href="/terms_conditions"><p>Terms & Conditions</p></Link>	 */}
 					<p>Privacy Policy</p>
 					<p>Support</p>
 					<p>Contact</p>
