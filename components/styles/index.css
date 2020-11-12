@@ -762,6 +762,24 @@ height: 3vh;
   height: 100%;
   width: 30vw;
 }
+.thank-you-page {
+  height: 90vh;
+  margin-top:10vh;
+}
+
+.thank-you-div {
+  height: 100%;
+  background-image: linear-gradient(#f66c4f, #5BA5A6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thank-you-div h1 {
+  color: white;
+  font-family: 'EB Garamond', serif;
+  
+}
 
 .footer-container {
   display: flex;
