@@ -59,15 +59,14 @@
   }
   .about-description {
     height: 60vh;
-    min-width: 20vw;
+    /* min-width: 25vw; */
     display: flex;
     justify-content: center;
   }
-  .about-description {
-    /* height: 10vh; */
-    min-width: 25vw;
-    /* margin-bottom: 8vh; */
+  .description-about {
+   font-size: 18px;
   }
+
   .description {
     width: 80%;
     margin: 0 1vw 0 1vw;
@@ -661,7 +660,7 @@
   width: 100%;
 }
 .name-share-text h2{
-  font-size: 5px;
+  font-size: 1px;
 }
 .share-div {
 
@@ -762,7 +761,7 @@
   /* padding-top: 10px; */
 }
 .podcast-header-div h2 {
-  font-size: 16px;
+  font-size: 12px;
 }
 .podcast-header-div {
   height: 18vh;

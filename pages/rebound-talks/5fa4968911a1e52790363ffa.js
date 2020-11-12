@@ -69,9 +69,11 @@ class PodcastDetail extends Component {
                     <div className="podcast-header-div">
                         <div className="podcast-categories">
                             <p id="categories-podcast">#Stoicism </p>
-                            <p id="categories-podcast">#Adversity </p>
+                            <p id="categories-podcast">#Author </p>
                             <p id="categories-podcast">#Psychology </p>
                             <p id="categories-podcast">#Philosophy </p>
+                            <p id="categories-podcast">#Adversity </p>
+
 
 
                             </div>
@@ -88,7 +90,7 @@ class PodcastDetail extends Component {
                             </div>
                         </div>
                     </div>
-                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/15311870/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/"
+                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/16386857/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/"
                             width="80%"
                             height="95px"
                             className="podcast-embed"
@@ -107,17 +109,8 @@ class PodcastDetail extends Component {
                         <p>{podcast.description}</p>
        
                     </div>
-                    {/* <div className="podcast-detail-kit-div">
-                        <p id="survival-kit-word">SURVIVAL KITS</p>
-                        <div className="kits-all-section">
-                            {this.state.kits.map((i, index) => {
-                                return (
-                                    <KitCard kit={i} key={index}/>
-                                )
-                            })}
-                        </div>
-                    </div> */}
-                    <div className="show-notes-div">
+
+                    {/* <div className="show-notes-div">
                         <h2>Show notes:</h2>
                         <ul className="show-notes-ul">
                             <li><a href="https://www.amazon.com/gp/product/0393652491/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393652491&linkCode=as2&tag=rebound0a-20&linkId=b885a83523cd6c1986adcf2495ef31e2">The Stoic Challenge: A Philosopher's Guide to Becoming Tougher, Calmer, and More Resilient </a></li>
@@ -128,10 +121,9 @@ class PodcastDetail extends Component {
                             <li><a href="https://intellectinterviews.com/2020/06/williambirvine-stoicism/">Target vs. Victimize</a></li>
                             <li>William on <a href="https://howtobeastoic.wordpress.com/2015/03/26/irvine-on-negative-visualization/">Negative Visualization</a></li>
                             <li>"We suffer more in imagination than in reality" - Seneca <a href="https://www.instagram.com/p/CAyPx7kn-Qq/">Click here</a></li>
-                            
-
                         </ul>
-                        </div>
+                    </div> */}
+
                     <div className="container-subscribe-podcast-recommendation">
                     <div className="container-subscribe">
                     <div className="subscribe-div">

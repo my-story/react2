@@ -68,9 +68,11 @@ class PodcastDetail extends Component {
 
                     <div className="podcast-header-div">
                         <div className="podcast-categories">
-                            <p id="categories-podcast">#Adversity </p>
-                            <p id="categories-podcast">#Psychology </p>
-                            <p id="categories-podcast">#NYU </p>
+                            <p id="categories-podcast">#Marketing </p>
+                            <p id="categories-podcast">#Alchemy </p>
+                            <p id="categories-podcast">#Author </p>
+                            <p id="categories-podcast">#Guru </p>
+
 
                             </div>
                             <h1>{podcast.title}</h1>
@@ -86,7 +88,7 @@ class PodcastDetail extends Component {
                             </div>
                         </div>
                     </div>
-                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/14252078/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/"
+                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/15752336/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/"
                             width="80%"
                             height="95px"
                             className="podcast-embed"
@@ -106,24 +108,15 @@ class PodcastDetail extends Component {
                         <p>{podcast.description}</p>
 
                     </div>
-                    {/* <div className="podcast-detail-kit-div">
-                        <p id="survival-kit-word">SURVIVAL KITS</p>
-                        <div className="kits-all-section">
-                            {this.state.kits.map((i, index) => {
-                                return (
-                                    <KitCard kit={i} key={index}/>
-                                )
-                            })}
-                        </div>
-                    </div> */}
-                    <div className="show-notes-div">
+
+                    {/* <div className="show-notes-div">
                         <h2>Show notes:</h2>
                         <ul className="show-notes-ul">
                             <li>Edtudio del q tal <a href="google.com">Hola</a></li>
                             <li>Libro de Pennebaker</li>
                             <li>Supiste ? metele</li>
                         </ul>
-                        </div>
+                        </div> */}
                     <div className="container-subscribe-podcast-recommendation">
                     <div className="container-subscribe">
                     <div className="subscribe-div">

@@ -88,8 +88,8 @@ class InfluencerList extends Component {
             <div className="expert-message">
               <h1>Embrace your adversities.</h1>
               <div className="expert-message-p-div">
-              <p id="expert-message-description">
-              Rebound collaborates with experts to create 21-day guides for overcoming any adversity
+                <p id="expert-message-description">
+Our deep-dive interviews with experts across numerous arenas, reveal practical techniques to completely take control of your mind and achieve anything that you set out to achieve.
               </p>
               </div>
              <Link href="rebound-talks"><button id="survival-kit-button">SEE ALL PODCASTS</button></Link> 
@@ -125,11 +125,11 @@ class InfluencerList extends Component {
              <Link href="rebound-talks"><button id="survival-kit-button2">SEE ALL PODCASTS</button></Link> 
 
               </div>
-          <div className="top-categories">
-  
+
+{/* Categories Section */}
+          {/* <div className="top-categories">
               <h2><b>Rebound Talks Topics</b></h2>
               <div className="category-bar-index"> 
-            {/* <p><b className="all-categories-p">All Categories: </b></p> */}
             <div className="bar-categories-div">
               {category.map((category, index) => {
                 return (
@@ -140,9 +140,8 @@ class InfluencerList extends Component {
                })}
             </div>
           </div>
+        </div> */}
 
-            
-          </div>
 
   
               <div className="index-best-book-div-book">
@@ -160,7 +159,8 @@ class InfluencerList extends Component {
                   <p id="best-description-p">
                   Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Along the way he meets a Gypsy woman, a man who calls himself king, and an alchemist, all of whom point Santiago in the direction of his quest. No one knows what the treasure is, or if Santiago will be able to surmount the obstacles in his path. But what starts out as a journey to find worldly goods turns into a discovery of the treasure found within. Lush, evocative, and deeply humane, the story of Santiago.
                   </p>
-                  <button>Get the Book</button>
+             <a target="_blank" href="https://www.amazon.com/gp/product/0062315005/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0062315005&linkCode=as2&tag=rebound0a-20&linkId=c31e8e40b89c3cd912e5e636c855ca52"> <button>Get the Book</button></a> 
+
                 </div>
               </div>
   
