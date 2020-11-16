@@ -12,7 +12,7 @@ const SimpleForm = ({ status, message, className, style, onSubmitted }) => {
 
   return (
     <div className={className} style={style}>
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+      {status === "sending" && <div style={{ color: "blue" }}>ending...</div>}
       {status === "error" && (
         <div
           style={{ color: "red" }}
