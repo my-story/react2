@@ -47,12 +47,15 @@
     margin: 0;
   }
    
+  .about-heading-div {
+    height: 19vh;
+  }
 
   .about-heading {
-    height: 20vh;
+    /* height: 20vh; */
     width: 100%;
-    margin-bottom: 2vh;
-    margin-top: 5vh;
+    /* margin-bottom: 2vh;
+    margin-top: 5vh; */
   }
   .about-heading span {
     font-size: 25px;
@@ -538,7 +541,7 @@
     font-size: 15px;
   }
   .contact-page {
-    height: 120vh;
+    height: 130vh;
     margin: 5vh 5vw 0 5vw;
   }
   .contact-page h1{

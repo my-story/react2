@@ -48,7 +48,10 @@ class Contact extends Component {
             toastr.success("Message Sent")
             this.setState({done:true})
         })
-        .catch((error) => console.log(error))
+        .catch((error) => {
+            toastr.error("ERROR: Try again later :(")
+
+        })
     }
     
     render(){

@@ -788,7 +788,7 @@ height: 3vh;
   /* position: absolute; */
   /* bottom: 0; */
   left: 0;
-  height: 10vh;
+  height: 12vh;
   width: 100%;
   background-color: #f3f2eb;
   font-family: "Hind", sans-serif;
@@ -992,20 +992,22 @@ test cards new ones - REVIEW
   flex-direction: row;
   /* border: 1px solid; */
 }
-.about-heading {
+
+.about-heading-div {
   /* height: 19vh; */
-  width: 90%;
-  text-align: center;
   margin-top: 15vh;
+  width: 100%;
+display: flex;
+justify-content: center;
 
   /* margin-right: 10vw; */
 
 }
-.about-heading-div {
+.about-heading {
   /* height: 19vh; */
-  width: 100%;
-display: flex;
-justify-content: center;
+  width: 90%;
+  text-align: center;
+  /* margin-top: 15vh; */
 
   /* margin-right: 10vw; */
 
