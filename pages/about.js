@@ -30,10 +30,14 @@ function About(){
         	</div> */}
 			
 					<div className="about-who-are-we">
-						<div id="who-title"><span id="who-are-we"><b>Who are we?</b></span></div>
-						<div id="who-description">
-							<p>We are two college students looking for answers to the question. "Why do some people grow after setbakcs, and others don't?</p>
+						<div className="who-title">
+							<div >
+							<h2 id="who-are-we"><b>Who are we?</b></h2>
+						
+	
+							<p>We are Rebound, a company founded by two college students Antonio & Sebastian. Noticing how many of their friends turned into alcohol, marijuana, excessive eating, or other harmful habits to escape university life stresses. Experiencing firsthand what improper handling of life’s problems could do to a person and looking at the growing mental health epidemic. They felt the DUTY to do something about it and decided to hunt down the best tools, tips, and techniques that people can use to rebound from their adversities and become their best selves.</p>
 							</div>
+						</div>
 						<div className="about-workers-container">
 							<div className="about-workers-card">
 								<div><img id="about-picture" alt="Sebastian Grossmann" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1605125679/Untitled_design_1.png"/></div>

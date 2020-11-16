@@ -61,7 +61,7 @@
     font-size: 25px;
   }
   .about-description {
-    height: 60vh;
+    height: 100vh;
     /* min-width: 25vw; */
     display: flex;
     justify-content: center;
@@ -638,27 +638,13 @@
   }
 
 .about-who-are-we {
-  height: 90vh;
+  height: 170vh;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-#who-title {
-  font-size: 5vh;
-  font-family: Hind;
-  width: 80%;
-  margin-left: 12vw;
-}
-#who-description {
-  width: 90%;
-  height: 150px;
- align-self: center;
- margin-left: 0;
-  text-align: justify;
-  line-height: 20px;
 
-}
 .container-subscribe {
   width: 100%;
 }
