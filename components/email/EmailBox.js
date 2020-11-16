@@ -5,7 +5,7 @@ import * as toastr from 'toastr';
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import SimpleForm from "../MailChimp/SimpleForm";
 
-const url = "https://gmail.us5.list-manage.com/subscribe/post?u=d023c0ec0d058304602266614&amp;id=2cf9111764";
+const url = "https://reboundwithus.us2.list-manage.com/subscribe/post?u=be490e3de2417fa6db846b476&amp;id=6683dc909a";
 
 class EmailBox extends Component {
 
