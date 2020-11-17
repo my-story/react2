@@ -21,7 +21,7 @@ class EmailBox extends Component {
                   <SimpleForm onSubmitted={formData => subscribe(formData)} />
                   {status === "sending" && <div style={{ color: "blue" }}>Sending...</div>}
                   {status === "error" && <div style={{ color: "red" }}> Already Subscribed!</div>}
-                  {status === "success" && <div style={{ color: "green" }}>Subscribed !</div>}
+                  {status === "success" && <div style={{ color: "green" }}>Subscribed!</div>}
                 </div>
               )}
             />
