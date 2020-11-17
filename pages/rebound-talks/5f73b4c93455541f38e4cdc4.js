@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PodcastServices from "../../services/PodcastServices";
-import KitServices from "../../services/KitServices";
+// import KitServices from "../../services/KitServices";
 // import SurvivalKit from "../../components/survivalKit/SurvivalKit";
 import Iframe from 'react-iframe';
 import {FacebookShareButton, TwitterShareButton,  WhatsappShareButton} from "react-share";
