@@ -28,16 +28,12 @@ class PodcastDetail extends Component {
 PodcastServices.getOne("5fa4975011a1e52790363ffc")
             .then((podcast) => {
                 this.setState({podcast})
-                this.fetchKits(podcast.influencer._id)
+                //
             })
             .catch((err) => console.log(err))
     };
 
-    fetchKits = (id) => {
-        KitServices.getKits(id)
-            .then((kits) => this.setState({kits}))
-            .catch((err) => console.log(err))
-    };
+   //
 
     componentDidMount() {
         this.fetchPodcast();
@@ -52,7 +48,7 @@ PodcastServices.getOne("5fa4975011a1e52790363ffc")
         // console.log(url);
    
 
-        if (podcast === "" || this.state.kits === "") {
+        if (podcast === ""  ) {
             return(<div></div>)
         } else {
             return(

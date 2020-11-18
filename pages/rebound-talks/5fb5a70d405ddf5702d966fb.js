@@ -9,7 +9,7 @@ import Link from "next/link";
 import {Helmet} from 'react-helmet';
 // import {window} from 'global';
 
-
+//
 
 class PodcastDetail extends Component {
     state = {
@@ -25,7 +25,7 @@ class PodcastDetail extends Component {
     fetchPodcast = () => {
         // const {id} = this.props;
         
-        PodcastServices.getOne("5f20723b54c4be00174cc2d3")
+        PodcastServices.getOne("5fb5a70d405ddf5702d966fb")
             .then((podcast) => {
                 this.setState({podcast})
                 //
@@ -58,14 +58,17 @@ class PodcastDetail extends Component {
                     <title>Rebound Talks Podcast</title>
                     <link rel="canonical" href={`https://reboundwithus.com/rebound-talks/${podcast._id}`} />
                     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                    <meta property="og:image" content="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1595956570/William_b_web-promo.png"></meta>
                     <link rel="shortcut icon" href="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1584463817/ReboundIconSquare-01.png" type="image/x-icon"></link>
                     </Helmet>
 
                     <div className="podcast-header-div">
                         <div className="podcast-categories">
-                            <p id="categories-podcast">#Adversity </p>
-                            <p id="categories-podcast">#Psychology </p>
-                            <p id="categories-podcast">#NYU </p>
+                            <p id="categories-podcast">#Mindfulness </p>
+                            <p id="categories-podcast">#Buddhism </p>
+                            {/* <p id="categories-podcast">#CocaCola </p> */}
+                   
+
 
                             </div>
                             <h1>{podcast.title}</h1>
@@ -81,14 +84,13 @@ class PodcastDetail extends Component {
                             </div>
                         </div>
                     </div>
-                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/14252078/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/"
+                    <Iframe url="//html5-player.libsyn.com/embed/episode/id/16858085/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/" 
                             width="80%"
                             height="95px"
                             className="podcast-embed"
                             display="initial"
                             position="relative"/>
                     <div className="subscribe-podcast">
-                    
                         <p><b>Subscribe on</b></p>
                         <a href="https://podcasts.apple.com/us/podcast/the-rebound-talks/id1511330975" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145439/itunes-logo-podcast.png" alt="itunes-logo" /></a>
                         <a href="https://open.spotify.com/show/25dIWTvKIYcbPdssLu0e8M" target="_blank"><img className="podcast-subscribe" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1594145464/spotify-logo-black-png-4.png" alt="spotify-logo" /></a>
@@ -99,7 +101,7 @@ class PodcastDetail extends Component {
                 
                     <div className="podcast-detail-description-div">
                         <p>{podcast.description}</p>
-
+         
                     </div>
                     {/* <div className="podcast-detail-kit-div">
                         <p id="survival-kit-word">SURVIVAL KITS</p>
@@ -111,14 +113,21 @@ class PodcastDetail extends Component {
                             })}
                         </div>
                     </div> */}
-                    <div className="show-notes-div">
+                    {/* <div className="show-notes-div">
                         <h2>Show notes:</h2>
                         <ul className="show-notes-ul">
-                            <li>Edtudio del q tal <a href="google.com">Hola</a></li>
-                            <li>Libro de Pennebaker</li>
-                            <li>Supiste ? metele</li>
+                            <li><a href="https://www.amazon.com/gp/product/1541697111/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1541697111&linkCode=as2&tag=rebound0a-20&linkId=4c920a21cab100204a521806cfe152f0">Unsavory Truth: How Food Companies Skew the Science of What We Eat </a></li>
+                            <li><a href="coca-colacompany.com/home">Coca Cola </a></li>
+                            <li><a href="https://www.startribune.com/government-aid-to-farmers-soars-and-they-don-t-feel-right-about-it/572927111/">Farm Industry subsidies corn</a></li>
+                            <li><a href="https://www.foodpolitics.com/about/">Food Politics</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Nutrition">Nutrition</a></li>
+                            <li>The Marketing behind <a href="https://www.cdc.gov/tobacco/data_statistics/fact_sheets/tobacco_industry/marketing/index.htm">The Tobacco Industry </a></li>
+                           
+                            <li>What your diet should look like: <a href="https://www.amazon.com/gp/product/0865477388/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0865477388&linkCode=as2&tag=rebound0a-20&linkId=1f391b145af962fb0257cc91d48121c3">What to Eat</a></li>
+                            
+
                         </ul>
-                        </div>
+                        </div> */}
                     <div className="container-subscribe-podcast-recommendation">
                     <div className="container-subscribe">
                     <div className="subscribe-div">
@@ -136,7 +145,7 @@ class PodcastDetail extends Component {
                         <hr id="white-line"></hr>
                         <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f73b52c3455541f38e4cdc6`}><p><b>Robert Greene </b> - Irrationality, Death, and Fate (#21)</p></Link>
                         <hr id="white-line"></hr>
-                        <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f061cafe7eb8f2088f0acd6`}><p><b>Nir Eyal</b> - How to Become Indistractable, Take Control of Your Focus, and Re-shape Your Life (#2)</p></Link>
+                        <Link href="/rebound-talks/[id]" as={`/rebound-talks/5f061cafe7eb8f2088f0acd6`}><p><b>Nir Eyal</b> - How to Become Indistractable, Take Control of Your Focus, and Re-shape Your Life (#2)</p></Link> 
                         </div>
                     </div>
 

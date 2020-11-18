@@ -108,14 +108,14 @@ Our deep-dive interviews with experts across numerous arenas, reveal practical t
               <div className="best-book-info-div">
                 <div className="best-book-pictures">
                   {/* <img id="best-book-cover" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1590513128/Ep._1_4.png" alt="Book Cover" /> */}
-                  <img id="podcast-guest" src="https://assets.bonappetit.com/photos/5bd7781b46c24a0449673f55/master/pass/marion-nestle.jpg" alt="Author Picture" />
+                  <img id="podcast-guest" src="https://kripalu.org/sites/default/files/DesmondTim.jpg" alt="Author Picture" />
                 </div>
 
                 <div className="best-book-title-div">
-                  <h2>The Inner Workings of Nutrition and The Food System with Marion Nestle</h2>
-                  <p id="best-author-p">Marion Nestle</p>
+                  <h2>Mindfulness, Self-compassion, and Memory Reconsolidation</h2>
+                  <p id="best-author-p">Tim Desmond</p>
                   <p id="best-description-p">
-                  Marion Nestle is the Paulette Goddard professor of nutrition, food studies, and public health at New York University. She is also a sociology professor at NYU and a visiting professor of nutritional sciences at Cornell University. She is also the author of six prize-winning books that focus on what we should eat and the politics behind the food system. 
+                  Tim Desmond is a psychotherapist, author, Distinguished Faculty Scholar at Antioch University New England, and student of Zen Master Thich Nhat Hanh. Founder of Peer Collective, an app that allows you to find and schedule meetings with professional therapists worldwide and co-founder of Morning Sun Mindfulness Center. He specializes in teaching mindfulness and self-compassion practices to audiences around the world. 
                   </p>
                 <Link href="rebound-talks/5fac1eb168181421e8be84b9"><button id="survival-kit-button1">Listen Now!</button></Link> 
                  
