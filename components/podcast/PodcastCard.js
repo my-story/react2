@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import PodcastServices from '../../services/PodcastServices';
+// import PodcastServices from '../../services/PodcastServices';
 
 class PodcastCard extends Component {
 
