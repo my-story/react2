@@ -14,7 +14,7 @@ function About(){
 			 </div>
           	<div className="about-description">
 				<div className="description-about">
-                <p>We do this by speaking with all kinds of world class performers ranging from award winning psychologists, to pro surfers, to best selling authors. We touch on uncomfortable subjects like human adversities. And we figure out what tips, tools, and techniques they have gathered along their joruney to overcome their own mental barriers. Luckily, they have decided to share their insights with you so that you can unlock your true potential. The journey starts now! It will take effort and sacrifice, but hey, what easy comes easy goes.</p>
+                <p>We do this by speaking with all kinds of world class performers ranging from award winning psychologists, to pro surfers, to best selling authors. We touch on uncomfortable subjects like human adversities. And we figure out what tips, tools, and techniques they have gathered along their joruney to overcome their own mental barriers. Luckily, they have decided to share their insights with you so that you can unlock your true potential. The journey starts now! It will take effort and sacrifice. But it will pay off.</p>
 				</div>
 			</div>
         	{/* <div className="video-section">

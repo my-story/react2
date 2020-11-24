@@ -65,7 +65,6 @@ class InfluencerList extends Component {
     const { open, category, kits,height, podcast } = this.state
 
 
-    console.log(category)
       return (
         <div className="index-page" height={height}>
           <Helmet>

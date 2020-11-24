@@ -3,6 +3,7 @@ import PodcastServices from '../services/PodcastServices';
 import PodcastCard from '../components/podcast/PodcastCard';
 import CategoryBubbleOne from '../components/category/CategoryBubbleOne';
 import EmailBox from '../components/email/EmailBox';
+import {Helmet} from 'react-helmet';
 import {window} from 'global';
 
 
@@ -49,10 +50,20 @@ class Podcasts extends Component {
   
   render() {
     const {podcasts , category, height} = this.state;
-    console.log(podcasts);
+    
 
     return (
         <div className="podcast-all-page" height={height}>
+          <Helmet>
+          <meta charSet="utf-8" />
+          <title>Rebound Talks</title>
+          <link rel="canonical" href="https://reboundwithus.com/rebound-talks" />
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          <meta property="og:title" content="Rebound Talks Podcast"/>
+          <meta property="og:description" content="Have you ever wondered why some people grow after setbacks and some don’t? We are college students obsessed with answering this question. We created this podcast to hunt down the best tools, tips, and techniques to overcome the unique adversity that college students regularly face."/>
+          <link rel="shortcut icon" href="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1584463817/ReboundIconSquare-01.png" type="image/x-icon"></link>
+          {name === 'FACEBOOK_PIXEL_1' && <FACEBOOK_PIXEL_1 />}
+          </Helmet>
           <div className="podcast-title-div">
             <h1><b>Rebound Talks</b></h1>
             <p>Have you ever wondered why some people grow after setbacks and some don’t? We are college students obsessed with answering this question. We created this podcast to hunt down the best tools, tips, and techniques to overcome the unique adversity that college students regularly face.</p>
