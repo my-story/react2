@@ -4,6 +4,8 @@ import {Helmet} from 'react-helmet';
 // import Modal from "react-responsive-modal";
 // import PodcastServices from '../services/PodcastServices';
 import Scroll from '../components/hook/Scroll';
+import FACEBOOK_PIXEL_1 from '../components/pixel/facebook-pixel';
+
 
 
 class InfluencerList extends Component {
@@ -33,7 +35,9 @@ class InfluencerList extends Component {
   componentDidMount = () => {
     this.setState({height: window.innerHeight + 'px'});
     // this.podcastOfWeek();
+
   }
+
 
   // podcastOfWeek = () => {
  
@@ -80,6 +84,7 @@ class InfluencerList extends Component {
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')}
 </script>
+{name === 'FACEBOOK_PIXEL_1' && <FACEBOOK_PIXEL_1 />}
           </Helmet>
           <div className="expert-section">
           

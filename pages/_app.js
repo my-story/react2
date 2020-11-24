@@ -19,6 +19,7 @@ import Footer from '../components/Footer';
 import Loader from '../components/loader/Spinner';
 
 
+
 class MyApp extends App {
   state = {
     loggedInUser: "",
@@ -61,6 +62,7 @@ class MyApp extends App {
 
   componentDidMount = () => {
     this.checkLogged();
+
   }
 
   getQty() {
@@ -119,6 +121,9 @@ class MyApp extends App {
         <meta name="twitter:description" content="Uncover the tools you need for overcoming your mental barriers. Follow our Sage's advices, and create new positive habits. "/>
         <meta name="twitter:image" content="https://images.unsplash.com/photo-1560260240-c6ef90a163a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80"/>
         <meta name="twitter:card" content="http://reboundwithus.com"></meta>
+        
+
+
         {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" /> */}
         </Helmet>
 
