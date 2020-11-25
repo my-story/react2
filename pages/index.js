@@ -112,16 +112,16 @@ Our deep-dive interviews with experts across numerous arenas, reveal practical t
               <div className="best-book-info-div">
                 <div className="best-book-pictures">
                   {/* <img id="best-book-cover" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1590513128/Ep._1_4.png" alt="Book Cover" /> */}
-                  <img id="podcast-guest" src="https://kripalu.org/sites/default/files/DesmondTim.jpg" alt="Author Picture" />
+                  <img id="podcast-guest" src="https://i2.wp.com/psych2go.net/wp-content/uploads/2017/10/Timothy-Alexander-Pychyl-2017.jpg?fit=1847%2C2557&ssl=1" alt="Author Picture" />
                 </div>
 
                 <div className="best-book-title-div">
-                  <h2>Mindfulness, Self-compassion, and Memory Reconsolidation</h2>
-                  <p id="best-author-p">Tim Desmond</p>
+                  <h2>Solving The Procrastination Puzzle</h2>
+                  <p id="best-author-p">Dr. Tim A. Phychyl</p>
                   <p id="best-description-p">
-                  Tim Desmond is a psychotherapist, author, Distinguished Faculty Scholar at Antioch University New England, and student of Zen Master Thich Nhat Hanh. Founder of Peer Collective, an app that allows you to find and schedule meetings with professional therapists worldwide and co-founder of Morning Sun Mindfulness Center. He specializes in teaching mindfulness and self-compassion practices to audiences around the world. 
+                  Dr. Timothy A Pychyl is a faculty member in the Department of Psychology at Carleton University (Ottawa, Canada), Tim and his students devote their attention to understanding why and how we can sabotage our best intentions with needless delay. In addition to numerous journal articles, podcasts, and conference presentations  he is the author of Solving the Procrastination Puzzle: A Concise Guide to Strategies for Positive Change (Tarcher/Penguin, 2013).  As a university professor, Tim is a passionate and talented teacher who has received numerous awards including Canada's prestigious 3M National Teaching Fellowship. 
                   </p>
-                <Link href="rebound-talks/5fac1eb168181421e8be84b9"><button id="survival-kit-button1">Listen Now!</button></Link> 
+                <Link href="rebound-talks/5fbe96cc3d8efdaf5bf65d24"><button id="survival-kit-button1">Listen Now!</button></Link> 
                  
                 </div>
               </div>

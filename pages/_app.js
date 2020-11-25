@@ -1,5 +1,6 @@
 import React from 'react';
 import App, { Container } from 'next/app';
+import { Router } from 'next/router';
 import Cookies from 'universal-cookie';
 import {Helmet} from 'react-helmet';
 import NavBar from '../components/NavBar';
@@ -17,6 +18,8 @@ import 'antd/dist/antd.css';
 import 'react-dropdown/style.css'
 import Footer from '../components/Footer';
 import Loader from '../components/loader/Spinner';
+
+
 
 
 
@@ -61,7 +64,19 @@ class MyApp extends App {
   }
 
   componentDidMount = () => {
+    
     this.checkLogged();
+
+    import('react-facebook-pixel')
+    .then((x) => x.default)
+    .then((ReactPixel) => {
+      ReactPixel.init('365149557916855');
+      ReactPixel.pageView();
+
+      Router.events.on('routeChangeComplete', () => {
+        ReactPixel.pageView();
+      });
+    });
 
   }
 
