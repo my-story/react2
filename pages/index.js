@@ -112,16 +112,16 @@ Our deep-dive interviews with experts across numerous arenas, reveal practical t
               <div className="best-book-info-div">
                 <div className="best-book-pictures">
                   {/* <img id="best-book-cover" src="https://res.cloudinary.com/dpt8pbi8n/image/upload/v1590513128/Ep._1_4.png" alt="Book Cover" /> */}
-                  <img id="podcast-guest" src="https://i2.wp.com/psych2go.net/wp-content/uploads/2017/10/Timothy-Alexander-Pychyl-2017.jpg?fit=1847%2C2557&ssl=1" alt="Author Picture" />
+                  <img id="podcast-guest" src="https://miro.medium.com/max/3150/2*88Qdf_PKsdTYMipqHcYWtA.jpeg" alt="Author Picture" />
                 </div>
 
                 <div className="best-book-title-div">
-                  <h2>Solving The Procrastination Puzzle</h2>
-                  <p id="best-author-p">Dr. Tim A. Phychyl</p>
+                  <h2>Understanding Ultralearning , the Educational System, and Mental Barriers</h2>
+                  <p id="best-author-p">Scott H. Young</p>
                   <p id="best-description-p">
-                  Dr. Timothy A Pychyl is a faculty member in the Department of Psychology at Carleton University (Ottawa, Canada), Tim and his students devote their attention to understanding why and how we can sabotage our best intentions with needless delay. In addition to numerous journal articles, podcasts, and conference presentations  he is the author of Solving the Procrastination Puzzle: A Concise Guide to Strategies for Positive Change (Tarcher/Penguin, 2013).  As a university professor, Tim is a passionate and talented teacher who has received numerous awards including Canada's prestigious 3M National Teaching Fellowship. 
+                  Scott Young is the author of Wall Street Journal and National best selling book: "Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career". He has been a prolific writer on his blog since 2006 where he writes about learning, productivity, career, habits and living well. He is known for documenting learning challenges such as learning a 4-year MIT computer science degree in one year, learning four languages in one year and learning to draw portraits in 30 days.
                   </p>
-                <Link href="rebound-talks/5fbe96cc3d8efdaf5bf65d24"><button id="survival-kit-button1">Listen Now!</button></Link> 
+                <Link href="rebound-talks/5fc7a573dd8903f12ac87857"><button id="survival-kit-button1">Listen Now!</button></Link> 
                  
                 </div>
               </div>
