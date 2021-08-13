@@ -12,7 +12,7 @@
     "global": "^4.4.0",
     "is-empty-object": "^1.1.1",
     "js-cookie": "^2.2.0",
-    "next": "^9.5.5",
+    "next": "^11.1.0",
     "password-validator": "^4.1.1",
     "react": "^16.14.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
